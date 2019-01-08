@@ -8,14 +8,20 @@
 
 import UIKit
 import SAPFiori
+import SAPOData
 
 class EmployeeDirectoryViewController: UITableViewController {
+    
+    // MARK: Properties
+    
+    private var directory = [Employee]()
     
     // MARK: View Lidecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        refreshDirectory()
     }
     
     private func configureTableView() {
@@ -27,17 +33,31 @@ class EmployeeDirectoryViewController: UITableViewController {
     // MARK: Table View Data Source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        return directory.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let employee = directory[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIContactCell.reuseIdentifier, for: indexPath) as! FUIContactCell
-        cell.headlineText = "Nancy Davolio"
-        cell.subheadlineText = "Sales Representative"
+        cell.headlineText = employee.fullName
+        cell.subheadlineText = employee.title
         cell.accessoryType = presentedInSplitView ? .none : .disclosureIndicator
 
         return cell
+    }
+    
+    // MARK: Data Access
+    
+    private func refreshDirectory() {
+        var query = DataQuery().orderBy(Employee.lastName)
+        query = query.select(Employee.employeeID, Employee.lastName, Employee.firstName, Employee.title, Employee.titleOfCourtesy)
+        dataService.fetchEmployees(matching: query) { (employees, error) in
+            if let error = error {
+                self.showAlert(withError: error)
+            }
+            self.directory = employees ?? []
+            self.tableView.reloadData()
+        }
     }
 
 }

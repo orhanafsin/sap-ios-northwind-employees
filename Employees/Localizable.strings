@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Employees
+
+  Created by Robert Witt on 08.01.19.
+  Copyright © 2019 SAP. All rights reserved.
+*/
+
+"errorAlertTitle" = "Error";

@@ -19,4 +19,11 @@ extension UIViewController {
         return (UIApplication.shared.delegate as! AppDelegate).northwindEntities
     }
     
+    func showAlert(withError error: Error) {
+        let alert = UIAlertController(title: NSLocalizedString("errorAlertTitle", comment: ""),
+                                      message: error.localizedDescription,
+                                      preferredStyle: .alert)
+        self.present(alert, animated: true)
+    }
+    
 }

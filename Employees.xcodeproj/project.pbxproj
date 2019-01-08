@@ -49,6 +49,8 @@
 		4936169C441E4874BD296554 /* SummaryOfSalesByQuarterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C491EFA2E1C1100DD6279 /* SummaryOfSalesByQuarterDetailViewController.swift */; };
 		4B7A767421E535EE0084CD6D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */; };
 		4B7A767621E537280084CD6D /* EmployeeDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */; };
+		4B7A767821E53B480084CD6D /* EmployeeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767721E53B480084CD6D /* EmployeeExtension.swift */; };
+		4B7A767A21E53FB50084CD6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A767921E53FB50084CD6D /* Localizable.strings */; };
 		4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */; };
 		4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */; };
 		4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */; };
@@ -199,6 +201,8 @@
 		48EC139AF368E4316A746C4C /* OrderDetailsExtendedMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailsExtendedMasterViewController.swift; path = OrderDetailsExtended/OrderDetailsExtendedMasterViewController.swift; sourceTree = "<group>"; };
 		4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDirectoryViewController.swift; sourceTree = "<group>"; };
+		4B7A767721E53B480084CD6D /* EmployeeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeExtension.swift; sourceTree = "<group>"; };
+		4B7A767921E53FB50084CD6D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetail.swift"; sourceTree = "<group>"; };
 		4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionDetailViewController.swift; path = Region/RegionDetailViewController.swift; sourceTree = "<group>"; };
 		4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYear.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByYear.swift"; sourceTree = "<group>"; };
@@ -473,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				12E07EF11E96851800460A94 /* CollectionType.swift */,
+				4B7A767721E53B480084CD6D /* EmployeeExtension.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -564,6 +569,7 @@
 				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
 				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
 				7A1315C61D4B982000A5DA56 /* Info.plist */,
+				4B7A767921E53FB50084CD6D /* Localizable.strings */,
 			);
 			path = Employees;
 			sourceTree = "<group>";
@@ -817,6 +823,7 @@
 				761C3F5688B7C4863E2A7784 /* Category.storyboard in Resources */,
 				E2397E4810D61C452705D87F /* Supplier.storyboard in Resources */,
 				D0FA60E392DD042373020689 /* Employee.storyboard in Resources */,
+				4B7A767A21E53FB50084CD6D /* Localizable.strings in Resources */,
 				514B85CDDA46ADEEF9CABF1D /* CategorySalesFor1997.storyboard in Resources */,
 				1B1C7CBBAFD659C389EED663 /* ProductsAboveAveragePrice.storyboard in Resources */,
 				D059ED80FCE97B4CD25CAA71 /* SalesByCategory.storyboard in Resources */,
@@ -933,6 +940,7 @@
 				D8EABC6E7CC36E8DDADEC542 /* RegionMasterViewController.swift in Sources */,
 				74C569DBED94E31D5659478D /* RegionDetailViewController.swift in Sources */,
 				2D650CB87FA23DDF8385187A /* TerritoryMasterViewController.swift in Sources */,
+				4B7A767821E53B480084CD6D /* EmployeeExtension.swift in Sources */,
 				A83BC9C37ABAE63D91E6F1EC /* TerritoryDetailViewController.swift in Sources */,
 				97C4195C25FA7BF04DB5ADC6 /* CustomerAndSuppliersByCityMasterViewController.swift in Sources */,
 				5E4DF5C7BC7A8348C91C0153 /* CustomerAndSuppliersByCityDetailViewController.swift in Sources */,
