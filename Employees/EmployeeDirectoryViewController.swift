@@ -41,8 +41,12 @@ class EmployeeDirectoryViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIContactCell.reuseIdentifier, for: indexPath) as! FUIContactCell
         cell.headlineText = employee.fullName
         cell.subheadlineText = employee.title
+        if let photo = employee.photo {
+            cell.detailImage = UIImage(data: photo)
+        }
+        cell.detailImage = UIImage(data: employee.photo!)
         cell.accessoryType = presentedInSplitView ? .none : .disclosureIndicator
-
+        
         return cell
     }
     
@@ -50,7 +54,7 @@ class EmployeeDirectoryViewController: UITableViewController {
     
     private func refreshDirectory() {
         var query = DataQuery().orderBy(Employee.lastName)
-        query = query.select(Employee.employeeID, Employee.lastName, Employee.firstName, Employee.title, Employee.titleOfCourtesy)
+        query = query.select(Employee.employeeID, Employee.lastName, Employee.firstName, Employee.title, Employee.titleOfCourtesy, Employee.photo)
         dataService.fetchEmployees(matching: query) { (employees, error) in
             if let error = error {
                 self.showAlert(withError: error)
