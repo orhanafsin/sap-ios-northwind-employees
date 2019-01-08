@@ -11,6 +11,10 @@ import SAPOData
 
 extension UIViewController {
     
+    var presentedInSplitView: Bool {
+        return !(self.splitViewController?.isCollapsed ?? true)
+    }
+    
     var dataService: NorthwindEntities<OnlineODataProvider> {
         return (UIApplication.shared.delegate as! AppDelegate).northwindEntities
     }

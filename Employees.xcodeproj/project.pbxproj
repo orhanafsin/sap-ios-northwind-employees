@@ -48,6 +48,7 @@
 		48BBAD4B8C7A26BA395A7C03 /* ProductsAboveAveragePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598A3BEE6A1E396B3441F06 /* ProductsAboveAveragePrice.swift */; };
 		4936169C441E4874BD296554 /* SummaryOfSalesByQuarterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C491EFA2E1C1100DD6279 /* SummaryOfSalesByQuarterDetailViewController.swift */; };
 		4B7A767421E535EE0084CD6D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */; };
+		4B7A767621E537280084CD6D /* EmployeeDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */; };
 		4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */; };
 		4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */; };
 		4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */; };
@@ -197,6 +198,7 @@
 		47A7E29FEF48707591804960 /* SummaryOfSalesByQuarterMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByQuarterMasterViewController.swift; path = SummaryOfSalesByQuarter/SummaryOfSalesByQuarterMasterViewController.swift; sourceTree = "<group>"; };
 		48EC139AF368E4316A746C4C /* OrderDetailsExtendedMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailsExtendedMasterViewController.swift; path = OrderDetailsExtended/OrderDetailsExtendedMasterViewController.swift; sourceTree = "<group>"; };
 		4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDirectoryViewController.swift; sourceTree = "<group>"; };
 		4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetail.swift"; sourceTree = "<group>"; };
 		4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionDetailViewController.swift; path = Region/RegionDetailViewController.swift; sourceTree = "<group>"; };
 		4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYear.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByYear.swift"; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 				01D788956F3DFB9BA8AA6FF4 /* ProductSalesFor1997 */,
 				38C83CB46A4B338AF7AF0056 /* SummaryOfSalesByYear */,
 				4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */,
+				4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 				56CCCB0647B4DB6E31638EEA /* CategorySalesFor1997MasterViewController.swift in Sources */,
 				96175842F25C9C58842692FB /* CategorySalesFor1997DetailViewController.swift in Sources */,
 				CA3AEB8E10FAE4406CD50BD8 /* ProductsAboveAveragePriceMasterViewController.swift in Sources */,
+				4B7A767621E537280084CD6D /* EmployeeDirectoryViewController.swift in Sources */,
 				B69F073B073BFA1E44584735 /* ProductsAboveAveragePriceDetailViewController.swift in Sources */,
 				647EC980DE97AF315F67FFDB /* SalesByCategoryMasterViewController.swift in Sources */,
 				852D452E97FD5AEE7416899F /* SalesByCategoryDetailViewController.swift in Sources */,
