@@ -47,6 +47,7 @@
 		45BEB17C98D70C805E4646A9 /* OrderMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED93C5CE8D1EDA0E722ABD /* OrderMasterViewController.swift */; };
 		48BBAD4B8C7A26BA395A7C03 /* ProductsAboveAveragePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598A3BEE6A1E396B3441F06 /* ProductsAboveAveragePrice.swift */; };
 		4936169C441E4874BD296554 /* SummaryOfSalesByQuarterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C491EFA2E1C1100DD6279 /* SummaryOfSalesByQuarterDetailViewController.swift */; };
+		4B7A767421E535EE0084CD6D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */; };
 		4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */; };
 		4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */; };
 		4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */; };
@@ -195,6 +196,7 @@
 		479C4DFC5A4C02CFFFFE8065 /* NorthwindEntitiesFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesFactory.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/internal/NorthwindEntitiesFactory.swift"; sourceTree = "<group>"; };
 		47A7E29FEF48707591804960 /* SummaryOfSalesByQuarterMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByQuarterMasterViewController.swift; path = SummaryOfSalesByQuarter/SummaryOfSalesByQuarterMasterViewController.swift; sourceTree = "<group>"; };
 		48EC139AF368E4316A746C4C /* OrderDetailsExtendedMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailsExtendedMasterViewController.swift; path = OrderDetailsExtended/OrderDetailsExtendedMasterViewController.swift; sourceTree = "<group>"; };
+		4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetail.swift"; sourceTree = "<group>"; };
 		4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionDetailViewController.swift; path = Region/RegionDetailViewController.swift; sourceTree = "<group>"; };
 		4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYear.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByYear.swift"; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 				983E0CB88FFB04C461A169E0 /* CustomerAndSuppliersByCity */,
 				01D788956F3DFB9BA8AA6FF4 /* ProductSalesFor1997 */,
 				38C83CB46A4B338AF7AF0056 /* SummaryOfSalesByYear */,
+				4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 				A5735C496635ECDAB12812B3 /* Supplier.swift in Sources */,
 				831B4B15E49F85881101B2CD /* NorthwindEntities.swift in Sources */,
 				5334BF36A9811A5111DD7450 /* CustomerMasterViewController.swift in Sources */,
+				4B7A767421E535EE0084CD6D /* ViewControllerExtension.swift in Sources */,
 				322C75D71964FD5776425507 /* CustomerDetailViewController.swift in Sources */,
 				F946837462F1EEFA048A2EE5 /* OrderSubtotalMasterViewController.swift in Sources */,
 				4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */,
