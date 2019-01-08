@@ -67,6 +67,8 @@ class EmployeeDirectoryViewController: UITableViewController {
     // MARK: Data Access
     
     private func refreshDirectory() {
+        let loadingIndicator = FUIModalLoadingIndicatorView()
+        loadingIndicator.show(inView: view, animated: true)
         var query = DataQuery().orderBy(Employee.lastName)
         query = query.select(Employee.employeeID, Employee.lastName, Employee.firstName, Employee.title, Employee.titleOfCourtesy, Employee.photo)
         dataService.fetchEmployees(matching: query) { (employees, error) in
@@ -75,6 +77,7 @@ class EmployeeDirectoryViewController: UITableViewController {
             }
             self.directory = employees ?? []
             self.tableView.reloadData()
+            loadingIndicator.dismiss()
         }
     }
 
