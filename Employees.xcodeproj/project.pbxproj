@@ -51,6 +51,8 @@
 		4B7A767621E537280084CD6D /* EmployeeDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */; };
 		4B7A767821E53B480084CD6D /* EmployeeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767721E53B480084CD6D /* EmployeeExtension.swift */; };
 		4B7A767A21E53FB50084CD6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A767921E53FB50084CD6D /* Localizable.strings */; };
+		4B7A767C21E546C30084CD6D /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767B21E546C30084CD6D /* EmployeeDetailsViewController.swift */; };
+		4B7A768021E548ED0084CD6D /* EmployeeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */; };
 		4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */; };
 		4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */; };
 		4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */; };
@@ -203,6 +205,8 @@
 		4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDirectoryViewController.swift; sourceTree = "<group>"; };
 		4B7A767721E53B480084CD6D /* EmployeeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeExtension.swift; sourceTree = "<group>"; };
 		4B7A767921E53FB50084CD6D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4B7A767B21E546C30084CD6D /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
+		4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeDetails.storyboard; sourceTree = "<group>"; };
 		4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetail.swift"; sourceTree = "<group>"; };
 		4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionDetailViewController.swift; path = Region/RegionDetailViewController.swift; sourceTree = "<group>"; };
 		4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYear.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByYear.swift"; sourceTree = "<group>"; };
@@ -524,6 +528,7 @@
 				38C83CB46A4B338AF7AF0056 /* SummaryOfSalesByYear */,
 				4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */,
 				4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */,
+				4B7A767B21E546C30084CD6D /* EmployeeDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -565,6 +570,7 @@
 				755C10B41D5C63B000ECF6A2 /* Utils */,
 				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
 				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */,
 				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
 				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
 				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
@@ -839,6 +845,7 @@
 				5B634171D6C7CFA6EF5A9B2F /* OrdersQry.storyboard in Resources */,
 				CCBFD21B37862E5F144A41C3 /* CustomerDemographic.storyboard in Resources */,
 				D56A6D3CDFE76E6317F4CE0C /* Region.storyboard in Resources */,
+				4B7A768021E548ED0084CD6D /* EmployeeDetails.storyboard in Resources */,
 				976B5D2A9361A93A25CE5912 /* Territory.storyboard in Resources */,
 				5AAE9584F095859E33926B40 /* CustomerAndSuppliersByCity.storyboard in Resources */,
 				37E7FCDA88E6DC015CFFE29E /* ProductSalesFor1997.storyboard in Resources */,
@@ -864,6 +871,7 @@
 				E449202EF127F8B74FB8BFA2 /* NorthwindEntitiesMetadataParser.swift in Sources */,
 				35E987D83F35B456C8F3C5A1 /* NorthwindEntitiesStaticResolver.swift in Sources */,
 				3D93F51BCBCD52CCDA26CAA0 /* NorthwindEntitiesFactory.swift in Sources */,
+				4B7A767C21E546C30084CD6D /* EmployeeDetailsViewController.swift in Sources */,
 				657D50B92AE73D1ED3D9F64D /* NorthwindEntitiesMetadataText.swift in Sources */,
 				C169F42B5174F66A86466A15 /* SummaryOfSalesByQuarter.swift in Sources */,
 				2622A9588D7D8107561A92EC /* OrderSubtotal.swift in Sources */,

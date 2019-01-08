@@ -46,8 +46,22 @@ class EmployeeDirectoryViewController: UITableViewController {
         }
         cell.detailImage = UIImage(data: employee.photo!)
         cell.accessoryType = presentedInSplitView ? .none : .disclosureIndicator
+        cell.isMomentarySelection = !presentedInSplitView
         
         return cell
+    }
+    
+    // MARK: Table View Delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let employee = directory[indexPath.row]
+        let employeeDetailsStoryboard = UIStoryboard(name: "EmployeeDetails", bundle: nil)
+        let employeeDetailsViewController = employeeDetailsStoryboard.instantiateViewController(withIdentifier: "EmployeeDetails") as! EmployeeDetailsViewController
+        employeeDetailsViewController.employeeID = employee.employeeID
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let rightNavigationController = mainStoryboard.instantiateViewController(withIdentifier: "RightNavigationController") as! UINavigationController
+        rightNavigationController.viewControllers = [employeeDetailsViewController]
+        splitViewController?.showDetailViewController(rightNavigationController, sender: nil)
     }
     
     // MARK: Data Access
