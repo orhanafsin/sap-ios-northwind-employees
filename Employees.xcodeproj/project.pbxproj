@@ -1,0 +1,1375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9DDE80B562E2DDE88BF87A /* OrderDetailsExtendedMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC139AF368E4316A746C4C /* OrderDetailsExtendedMasterViewController.swift */; };
+		0B3D2FADB10FCEB958DEF652 /* SummaryOfSalesByQuarter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B3134DD0DDCBE099BE081 /* SummaryOfSalesByQuarter.storyboard */; };
+		0E2F91C6EC4304878B4DA222 /* ShipperMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3786AB17D083CD61AC5CE /* ShipperMasterViewController.swift */; };
+		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; };
+		128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		128B53061F8E667000E64DF6 /* SnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B53051F8E667000E64DF6 /* SnapshotViewController.swift */; };
+		12D066CF1F4DDB0E0075EBA4 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		12E07EF21E96851800460A94 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E07EF11E96851800460A94 /* CollectionType.swift */; };
+		12E84FE31F4ECC4A0061C99E /* SAPFioriFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; };
+		12E84FE41F4ECC4A0061C99E /* SAPFioriFlows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12E84FE51F4ECF220061C99E /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E84FDE1F4EBD460061C99E /* OnboardingManager.swift */; };
+		14AA77EE4661D8428BF983B1 /* ProductsByCategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314131EBBC6189D3B5F352D /* ProductsByCategoryDetailViewController.swift */; };
+		180D15C9FB8328CF50899FCF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB109E8D3187F07F891DDB /* Order.swift */; };
+		1920BDBFCBC9E8ABCBAF8FCE /* SummaryOfSalesByYear.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77AECBD3396E1700D5209332 /* SummaryOfSalesByYear.storyboard */; };
+		1B1C7CBBAFD659C389EED663 /* ProductsAboveAveragePrice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ABA940B42A061DF79347E0 /* ProductsAboveAveragePrice.storyboard */; };
+		206A69DB1D3E8E30BE5D9B1F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD6DD88F65E6091DC30739 /* Product.swift */; };
+		22EF2C7B7E66930DF959D6A6 /* OrderSubtotal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4071BEBEA24CD5B5993725 /* OrderSubtotal.storyboard */; };
+		236AD98148F90CAC903C4F46 /* AlphabeticalListOfProductMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BB4B8AF32B1EA8A174EA1 /* AlphabeticalListOfProductMasterViewController.swift */; };
+		2622A9588D7D8107561A92EC /* OrderSubtotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADEF7FDCA4AE57585F91E9F /* OrderSubtotal.swift */; };
+		27F11668D7C1B16F4F02C762 /* CategoryMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4848878587F46CD88E446F /* CategoryMasterViewController.swift */; };
+		28D4A5B8630B7AB34471F597 /* EmployeeMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536C59AAF40C94AC78EB921 /* EmployeeMasterViewController.swift */; };
+		29820D58889CB9FECDB6D75A /* CategorySalesFor1997.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0EC36C9A6333CC9183417E /* CategorySalesFor1997.swift */; };
+		29AFB60DB2B70E09FC11E442 /* ShipperDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFAD62B7686C11FE0E9E65 /* ShipperDetailViewController.swift */; };
+		2D650CB87FA23DDF8385187A /* TerritoryMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C7513C8137F24905619F74 /* TerritoryMasterViewController.swift */; };
+		322C75D71964FD5776425507 /* CustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013EED0BA934E12C21C145BA /* CustomerDetailViewController.swift */; };
+		3456986B977AB51C2EB461F1 /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4B7BA17F956AA54825565 /* Territory.swift */; };
+		35E987D83F35B456C8F3C5A1 /* NorthwindEntitiesStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223225A7BB5ABE27022965D7 /* NorthwindEntitiesStaticResolver.swift */; };
+		37E7FCDA88E6DC015CFFE29E /* ProductSalesFor1997.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B587A6264E98BDE9A2F20F48 /* ProductSalesFor1997.storyboard */; };
+		380F398590182A2CB93604E9 /* CustomerDemographicMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDA87D5E24DB40DEF26C28 /* CustomerDemographicMasterViewController.swift */; };
+		3941A34040E27FA76A7F737D /* OrderDetailsExtendedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3759D8269A575320F4E2BD /* OrderDetailsExtendedDetailViewController.swift */; };
+		3B70C8A37F46099589E13BA6 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */; };
+		3BD590677E93AA2BAD880D59 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF9DE88148351174EF9AF8 /* Order.storyboard */; };
+		3D93F51BCBCD52CCDA26CAA0 /* NorthwindEntitiesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479C4DFC5A4C02CFFFFE8065 /* NorthwindEntitiesFactory.swift */; };
+		404BBAC0B3423647C9265D09 /* OrderDetailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722272DBEB57E9F2A5178AA /* OrderDetailDetailViewController.swift */; };
+		4160296F3314A860954F9A77 /* SummaryOfSalesByQuarterMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E29FEF48707591804960 /* SummaryOfSalesByQuarterMasterViewController.swift */; };
+		42AA6439059BD5B7565B770A /* OrdersQryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F177258C15CE8107FB514C0 /* OrdersQryDetailViewController.swift */; };
+		45BEB17C98D70C805E4646A9 /* OrderMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED93C5CE8D1EDA0E722ABD /* OrderMasterViewController.swift */; };
+		48BBAD4B8C7A26BA395A7C03 /* ProductsAboveAveragePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598A3BEE6A1E396B3441F06 /* ProductsAboveAveragePrice.swift */; };
+		4936169C441E4874BD296554 /* SummaryOfSalesByQuarterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C491EFA2E1C1100DD6279 /* SummaryOfSalesByQuarterDetailViewController.swift */; };
+		4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */; };
+		4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */; };
+		4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */; };
+		509E90EA234DA1688955EF01 /* SupplierDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2990522A99DC08352E5F3 /* SupplierDetailViewController.swift */; };
+		514B85CDDA46ADEEF9CABF1D /* CategorySalesFor1997.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB62DE84DE9C3799B21B6DBC /* CategorySalesFor1997.storyboard */; };
+		52DC627D53206FA6BDEBE115 /* OrdersQryMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77264635C50A6873D4DC9E8 /* OrdersQryMasterViewController.swift */; };
+		5334BF36A9811A5111DD7450 /* CustomerMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9ADA2762384CC3E90DA9E0 /* CustomerMasterViewController.swift */; };
+		534C84D94F9FF0FB587B7387 /* ProductSalesFor1997MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0575702C52631A43385C02 /* ProductSalesFor1997MasterViewController.swift */; };
+		56CCCB0647B4DB6E31638EEA /* CategorySalesFor1997MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3AF458A3CA094618B8A6B /* CategorySalesFor1997MasterViewController.swift */; };
+		57E8EE521A6D2DE8AC1D51BC /* AlphabeticalListOfProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21D36582FECB2C49CDBAE3 /* AlphabeticalListOfProductDetailViewController.swift */; };
+		5882B186720955B96EFD4057 /* Invoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC6062B5C95F98C96F376A /* Invoice.storyboard */; };
+		5A71DBA7D6AC49210EDB58D0 /* SalesTotalsByAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A153036F2ECD8496FA502 /* SalesTotalsByAmount.swift */; };
+		5AAE9584F095859E33926B40 /* CustomerAndSuppliersByCity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD11037160004DA65F0A5F4 /* CustomerAndSuppliersByCity.storyboard */; };
+		5B634171D6C7CFA6EF5A9B2F /* OrdersQry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A40179744CB66FCFD093AE5 /* OrdersQry.storyboard */; };
+		5E4DF5C7BC7A8348C91C0153 /* CustomerAndSuppliersByCityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0FCD0E615805B7575C62F /* CustomerAndSuppliersByCityDetailViewController.swift */; };
+		619EE43B9D71E54EBD9E67BE /* OrderDetailsExtended.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2E2BC223BD94E59FFB8E02 /* OrderDetailsExtended.storyboard */; };
+		63E93F634EA5CA2D8C6B106C /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02426FC7E5F8969C5C97B75 /* Product.storyboard */; };
+		647EC980DE97AF315F67FFDB /* SalesByCategoryMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FFB849888591D1CBE5942C /* SalesByCategoryMasterViewController.swift */; };
+		657D50B92AE73D1ED3D9F64D /* NorthwindEntitiesMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53D4C594746ED20F90D02D /* NorthwindEntitiesMetadataText.swift */; };
+		6763F37355F82F07C0680646 /* OrderDetailsExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FD1219D5B6EE6616205B8 /* OrderDetailsExtended.swift */; };
+		71C49EFCEDB31410B08673DC /* ProductSalesFor1997DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ABBE80117F5C70575F0D8E /* ProductSalesFor1997DetailViewController.swift */; };
+		72C08D7CB89C7E956D118397 /* SummaryOfSalesByYearDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7F010EABFA7524EB12CC5 /* SummaryOfSalesByYearDetailViewController.swift */; };
+		73911C956D94297FFB4CE68B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77482FF691E021CF229FAE00 /* Category.swift */; };
+		74C569DBED94E31D5659478D /* RegionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */; };
+		755533991F25FD330017A1BC /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; };
+		756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; };
+		7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		759BA2701E6821A7001C32BA /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; };
+		759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75A8E8DE26EC25684527A951 /* AlphabeticalListOfProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A61296738E47E3E3FD74EF3 /* AlphabeticalListOfProduct.storyboard */; };
+		75AC42D41DAF824D00B445FF /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42CE1DAF824D00B445FF /* CollectionsViewController.swift */; };
+		761C3F5688B7C4863E2A7784 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98556D718F42B936099B61D /* Category.storyboard */; };
+		783DD058DABE5CC33D51E6D7 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41339B41E3ECF9CA38FFCE /* ProductDetailViewController.swift */; };
+		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
+		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
+		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
+		7A26CA1C1F31BA8800B156B6 /* CellCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */; };
+		7A9F6FF61F3883D3000A1815 /* SAPFioriLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */; };
+		7C13CD9ADC96F2F29DD1CC1D /* CustomerDemographicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB29354557520A13342807 /* CustomerDemographicDetailViewController.swift */; };
+		7C7B3D48F15E3CB810FC31B5 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A257CC8F2A40DE04414E5C /* Employee.swift */; };
+		831B4B15E49F85881101B2CD /* NorthwindEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB661F966ED42CEEAA9F7DB1 /* NorthwindEntities.swift */; };
+		83A8CC05BF50AA6FF60FA6FD /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE640F3182083CBC9EE72998 /* EmployeeDetailViewController.swift */; };
+		852D452E97FD5AEE7416899F /* SalesByCategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C921230A9056A8EA1CED78 /* SalesByCategoryDetailViewController.swift */; };
+		9332CAD8980F7AE8B4387C78 /* InvoiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E55F8970FB5DF5570558737 /* InvoiceDetailViewController.swift */; };
+		96175842F25C9C58842692FB /* CategorySalesFor1997DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677070B2581CAA04EDAA0403 /* CategorySalesFor1997DetailViewController.swift */; };
+		976B5D2A9361A93A25CE5912 /* Territory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C024EDD1970422A1824DDD /* Territory.storyboard */; };
+		97C4195C25FA7BF04DB5ADC6 /* CustomerAndSuppliersByCityMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49A869F51CA3B1DCCE2359 /* CustomerAndSuppliersByCityMasterViewController.swift */; };
+		98A2E607F006DC449EFC106F /* CurrentProductList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00024AEF3438D8BF21410892 /* CurrentProductList.storyboard */; };
+		9EFA6FA275A22ED46A4E0F18 /* SalesTotalsByAmountMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D753522904094B40B1672 /* SalesTotalsByAmountMasterViewController.swift */; };
+		A46A7B1739D3CB39B190A9E1 /* SalesByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5683F0C786CB3F8DCB052C0C /* SalesByCategory.swift */; };
+		A5735C496635ECDAB12812B3 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AF0712E833E45CCF3B8B5 /* Supplier.swift */; };
+		A83BC9C37ABAE63D91E6F1EC /* TerritoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914468BD7C33C9AE0ED31B0B /* TerritoryDetailViewController.swift */; };
+		A86585AACAE4928774AEAE42 /* SalesTotalsByAmountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFE7AD0E60AB31DD9FB634 /* SalesTotalsByAmountDetailViewController.swift */; };
+		ABDD35070037375CFFED2999 /* ProductsByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865F74AFD6B24053C2CFD25 /* ProductsByCategory.swift */; };
+		AFD85D7F50C326F3DEC5C9F3 /* SalesTotalsByAmount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE1521307649482B37BA27E /* SalesTotalsByAmount.storyboard */; };
+		B1E9A2E1A5C26109333FAEF8 /* NorthwindEntitiesMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE8D5DB34AA9DE6B934141 /* NorthwindEntitiesMetadataChanges.swift */; };
+		B69F073B073BFA1E44584735 /* ProductsAboveAveragePriceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462C576B06D2FD2F391DA30 /* ProductsAboveAveragePriceDetailViewController.swift */; };
+		B83849612B9D84EA86FF5136 /* CurrentProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19268841A9B4296AC7B86F /* CurrentProductList.swift */; };
+		BA2E9789FA73B4757D3E93A2 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E0DD0EB6BA21733C888F4 /* CategoryDetailViewController.swift */; };
+		BC1B023243843A484DEDB02B /* Shipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD7C39AAD30BBDAFC4918 /* Shipper.swift */; };
+		BDCB67369449D1501E83F5EB /* ProductsByCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC3797882A7176C2B8CC4F0 /* ProductsByCategory.storyboard */; };
+		BDCEBCBB2E113A26BD768811 /* ProductMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872AC3D073C3CD324896E75 /* ProductMasterViewController.swift */; };
+		BF686BAA1A45106A29E4446B /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F444F51343A2622ABA61BD /* Invoice.swift */; };
+		C169F42B5174F66A86466A15 /* SummaryOfSalesByQuarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53DF58F2E231B79CE85823 /* SummaryOfSalesByQuarter.swift */; };
+		C4C255DA8119D0542A91462E /* SummaryOfSalesByYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */; };
+		C72FC8B6D995CD3951A1C992 /* SupplierMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF114A01F1264FE0ADC986F8 /* SupplierMasterViewController.swift */; };
+		C7B31B20891E78C6A00F6433 /* NorthwindEntitiesMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B4351CBD46204EBC5282B1 /* NorthwindEntitiesMetadata.swift */; };
+		CA3AEB8E10FAE4406CD50BD8 /* ProductsAboveAveragePriceMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86D10DD185E0BEB015C644B /* ProductsAboveAveragePriceMasterViewController.swift */; };
+		CBA3357B33DF7EBB0928B21A /* ProductsByCategoryMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83EF4AAFE22DA5F7BCA44F /* ProductsByCategoryMasterViewController.swift */; };
+		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
+		CCB6B4D82CA9F5C60D3341FE /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41113D3C028017B17E3810D6 /* Customer.storyboard */; };
+		CCBFD21B37862E5F144A41C3 /* CustomerDemographic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0457FE88A24D9EF90800D /* CustomerDemographic.storyboard */; };
+		CD7F3F930C66137DA3C56DF6 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD4BF3A14ED86AD370798 /* Customer.swift */; };
+		CEA7B0D84669C47C8864C6CB /* CurrentProductListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F5E2BBC61CBD5CD9994E9 /* CurrentProductListDetailViewController.swift */; };
+		D018E3B3CBF4531CA30FE059 /* CustomerAndSuppliersByCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BF24550556FBE08AAE882 /* CustomerAndSuppliersByCity.swift */; };
+		D059ED80FCE97B4CD25CAA71 /* SalesByCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142085744FA77976401F8D3E /* SalesByCategory.storyboard */; };
+		D0FA60E392DD042373020689 /* Employee.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F576AC3A94B5C721BF6957 /* Employee.storyboard */; };
+		D56A6D3CDFE76E6317F4CE0C /* Region.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4C10418B359D1B760767F6 /* Region.storyboard */; };
+		D8EABC6E7CC36E8DDADEC542 /* RegionMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF8D8F50B4C6A04B850A07 /* RegionMasterViewController.swift */; };
+		D94003F7D1F364E8C2EBE935 /* OrdersQry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4482E514510265C78ED69 /* OrdersQry.swift */; };
+		DBE02B0ED8A7CBC081E0C415 /* Shipper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C2C1E7780F6FD0DD9ECB0E /* Shipper.storyboard */; };
+		DF01C0E7B9701152D088D149 /* CurrentProductListMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA06E0221EB3DC38AE8A2D /* CurrentProductListMasterViewController.swift */; };
+		E2397E4810D61C452705D87F /* Supplier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BAF2F5F6FFEE7A3C23FC41 /* Supplier.storyboard */; };
+		E449202EF127F8B74FB8BFA2 /* NorthwindEntitiesMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B60B8301BDF81A75A20864 /* NorthwindEntitiesMetadataParser.swift */; };
+		E78B481DC9E9DC412A6EA9B9 /* OrderDetailMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69557E3A918865D245E551D1 /* OrderDetailMasterViewController.swift */; };
+		EA4785617AC8D6BC9EF8FAE5 /* ProductSalesFor1997.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC8F9999BF2A6D72957D327 /* ProductSalesFor1997.swift */; };
+		EB8F85A22F72DFEFC282B5AA /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3F691D161C63490D4CDD0 /* OrderDetailViewController.swift */; };
+		F6649BCD8CC45310019AD3FB /* AlphabeticalListOfProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA197C7FAD5FC951A36A59AB /* AlphabeticalListOfProduct.swift */; };
+		F7111EB3075AC323D5030BB5 /* InvoiceMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265B4FB10F6A9C64E60BFE2 /* InvoiceMasterViewController.swift */; };
+		F946837462F1EEFA048A2EE5 /* OrderSubtotalMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998472784584A758236B952 /* OrderSubtotalMasterViewController.swift */; };
+		F9E0E90DA310D3417A1CCA9C /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C43579064068EFBB1157FF3 /* OrderDetail.storyboard */; };
+		FBD5F15E433BF6D6AA802944 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7D2F09CCC5E1808ADBCAD /* Region.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */,
+				12E84FE41F4ECC4A0061C99E /* SAPFioriFlows.framework in Embed Frameworks */,
+				128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */,
+				755533991F25FD330017A1BC /* (null) in Embed Frameworks */,
+				756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */,
+				759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		013EED0BA934E12C21C145BA /* CustomerDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerDetailViewController.swift; path = Customer/CustomerDetailViewController.swift; sourceTree = "<group>"; };
+		06BFE7AD0E60AB31DD9FB634 /* SalesTotalsByAmountDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesTotalsByAmountDetailViewController.swift; path = SalesTotalsByAmount/SalesTotalsByAmountDetailViewController.swift; sourceTree = "<group>"; };
+		0722272DBEB57E9F2A5178AA /* OrderDetailDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailDetailViewController.swift; path = OrderDetail/OrderDetailDetailViewController.swift; sourceTree = "<group>"; };
+		09577C70A3B1C941A38A2800 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Invoice.storyboard; sourceTree = "<group>"; };
+		10EDD7C39AAD30BBDAFC4918 /* Shipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shipper.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Shipper.swift"; sourceTree = "<group>"; };
+		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
+		128604D91E55B41600C698B5 /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPCommon.framework; sourceTree = "<group>"; };
+		128B53051F8E667000E64DF6 /* SnapshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewController.swift; sourceTree = "<group>"; };
+		12E07EF11E96851800460A94 /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		12E84FDE1F4EBD460061C99E /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFioriFlows.framework; sourceTree = "<group>"; };
+		1865F74AFD6B24053C2CFD25 /* ProductsByCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsByCategory.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/ProductsByCategory.swift"; sourceTree = "<group>"; };
+		1D83EF4AAFE22DA5F7BCA44F /* ProductsByCategoryMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsByCategoryMasterViewController.swift; path = ProductsByCategory/ProductsByCategoryMasterViewController.swift; sourceTree = "<group>"; };
+		2028D5AFC607FAAFF8C8BCF3 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CustomerDemographic.storyboard; sourceTree = "<group>"; };
+		223225A7BB5ABE27022965D7 /* NorthwindEntitiesStaticResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesStaticResolver.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/internal/NorthwindEntitiesStaticResolver.swift"; sourceTree = "<group>"; };
+		224BF24550556FBE08AAE882 /* CustomerAndSuppliersByCity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerAndSuppliersByCity.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/CustomerAndSuppliersByCity.swift"; sourceTree = "<group>"; };
+		2314131EBBC6189D3B5F352D /* ProductsByCategoryDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsByCategoryDetailViewController.swift; path = ProductsByCategory/ProductsByCategoryDetailViewController.swift; sourceTree = "<group>"; };
+		264D3AC2EBCE8C6E82FB2B07 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Employee.storyboard; sourceTree = "<group>"; };
+		2687BC0DD3409DDEC33740E6 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SummaryOfSalesByYear.storyboard; sourceTree = "<group>"; };
+		2872AC3D073C3CD324896E75 /* ProductMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductMasterViewController.swift; path = Product/ProductMasterViewController.swift; sourceTree = "<group>"; };
+		2A04F8F63081C724C9683729 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Product.storyboard; sourceTree = "<group>"; };
+		2E55F8970FB5DF5570558737 /* InvoiceDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvoiceDetailViewController.swift; path = Invoice/InvoiceDetailViewController.swift; sourceTree = "<group>"; };
+		34DCB3ED580DFEDEB839BE06 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductsAboveAveragePrice.storyboard; sourceTree = "<group>"; };
+		34F444F51343A2622ABA61BD /* Invoice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Invoice.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Invoice.swift"; sourceTree = "<group>"; };
+		370DBA9235C6BE5D3A7FA662 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CategorySalesFor1997.storyboard; sourceTree = "<group>"; };
+		3A53D4C594746ED20F90D02D /* NorthwindEntitiesMetadataText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesMetadataText.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/internal/NorthwindEntitiesMetadataText.swift"; sourceTree = "<group>"; };
+		3B3C491EFA2E1C1100DD6279 /* SummaryOfSalesByQuarterDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByQuarterDetailViewController.swift; path = SummaryOfSalesByQuarter/SummaryOfSalesByQuarterDetailViewController.swift; sourceTree = "<group>"; };
+		3C0EC36C9A6333CC9183417E /* CategorySalesFor1997.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CategorySalesFor1997.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/CategorySalesFor1997.swift"; sourceTree = "<group>"; };
+		479C4DFC5A4C02CFFFFE8065 /* NorthwindEntitiesFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesFactory.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/internal/NorthwindEntitiesFactory.swift"; sourceTree = "<group>"; };
+		47A7E29FEF48707591804960 /* SummaryOfSalesByQuarterMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByQuarterMasterViewController.swift; path = SummaryOfSalesByQuarter/SummaryOfSalesByQuarterMasterViewController.swift; sourceTree = "<group>"; };
+		48EC139AF368E4316A746C4C /* OrderDetailsExtendedMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailsExtendedMasterViewController.swift; path = OrderDetailsExtended/OrderDetailsExtendedMasterViewController.swift; sourceTree = "<group>"; };
+		4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetail.swift"; sourceTree = "<group>"; };
+		4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionDetailViewController.swift; path = Region/RegionDetailViewController.swift; sourceTree = "<group>"; };
+		4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYear.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByYear.swift"; sourceTree = "<group>"; };
+		4DDEA7B793316DF62042A0B6 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Region.storyboard; sourceTree = "<group>"; };
+		4FD3AF458A3CA094618B8A6B /* CategorySalesFor1997MasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CategorySalesFor1997MasterViewController.swift; path = CategorySalesFor1997/CategorySalesFor1997MasterViewController.swift; sourceTree = "<group>"; };
+		513DD4BF3A14ED86AD370798 /* Customer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Customer.swift"; sourceTree = "<group>"; };
+		51544AE06081C3C8B0427E32 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Shipper.storyboard; sourceTree = "<group>"; };
+		52C921230A9056A8EA1CED78 /* SalesByCategoryDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesByCategoryDetailViewController.swift; path = SalesByCategory/SalesByCategoryDetailViewController.swift; sourceTree = "<group>"; };
+		5462C576B06D2FD2F391DA30 /* ProductsAboveAveragePriceDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsAboveAveragePriceDetailViewController.swift; path = ProductsAboveAveragePrice/ProductsAboveAveragePriceDetailViewController.swift; sourceTree = "<group>"; };
+		5683F0C786CB3F8DCB052C0C /* SalesByCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesByCategory.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SalesByCategory.swift"; sourceTree = "<group>"; };
+		58BE8D5DB34AA9DE6B934141 /* NorthwindEntitiesMetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesMetadataChanges.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/internal/NorthwindEntitiesMetadataChanges.swift"; sourceTree = "<group>"; };
+		5A21D36582FECB2C49CDBAE3 /* AlphabeticalListOfProductDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphabeticalListOfProductDetailViewController.swift; path = AlphabeticalListOfProduct/AlphabeticalListOfProductDetailViewController.swift; sourceTree = "<group>"; };
+		5ADEF7FDCA4AE57585F91E9F /* OrderSubtotal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderSubtotal.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderSubtotal.swift"; sourceTree = "<group>"; };
+		5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderSubtotalDetailViewController.swift; path = OrderSubtotal/OrderSubtotalDetailViewController.swift; sourceTree = "<group>"; };
+		5E5E0BAA0E37352DBFB0D03C /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OrderSubtotal.storyboard; sourceTree = "<group>"; };
+		5F177258C15CE8107FB514C0 /* OrdersQryDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdersQryDetailViewController.swift; path = OrdersQry/OrdersQryDetailViewController.swift; sourceTree = "<group>"; };
+		61C8483B3119D4B3F8D7258E /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CurrentProductList.storyboard; sourceTree = "<group>"; };
+		64C7513C8137F24905619F74 /* TerritoryMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TerritoryMasterViewController.swift; path = Territory/TerritoryMasterViewController.swift; sourceTree = "<group>"; };
+		677070B2581CAA04EDAA0403 /* CategorySalesFor1997DetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CategorySalesFor1997DetailViewController.swift; path = CategorySalesFor1997/CategorySalesFor1997DetailViewController.swift; sourceTree = "<group>"; };
+		694C33354E077E67E3945E2E /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Category.storyboard; sourceTree = "<group>"; };
+		69557E3A918865D245E551D1 /* OrderDetailMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailMasterViewController.swift; path = OrderDetail/OrderDetailMasterViewController.swift; sourceTree = "<group>"; };
+		6998472784584A758236B952 /* OrderSubtotalMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderSubtotalMasterViewController.swift; path = OrderSubtotal/OrderSubtotalMasterViewController.swift; sourceTree = "<group>"; };
+		6D41339B41E3ECF9CA38FFCE /* ProductDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductDetailViewController.swift; path = Product/ProductDetailViewController.swift; sourceTree = "<group>"; };
+		6D9A153036F2ECD8496FA502 /* SalesTotalsByAmount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesTotalsByAmount.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SalesTotalsByAmount.swift"; sourceTree = "<group>"; };
+		71A4482E514510265C78ED69 /* OrdersQry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdersQry.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrdersQry.swift"; sourceTree = "<group>"; };
+		73B60B8301BDF81A75A20864 /* NorthwindEntitiesMetadataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesMetadataParser.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/internal/NorthwindEntitiesMetadataParser.swift"; sourceTree = "<group>"; };
+		7536C59AAF40C94AC78EB921 /* EmployeeMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmployeeMasterViewController.swift; path = Employee/EmployeeMasterViewController.swift; sourceTree = "<group>"; };
+		7561921A1DBE1A90007F562C /* SAPOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOData.framework; sourceTree = "<group>"; };
+		7569DA511E5C716A00C5D751 /* SAPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFoundation.framework; sourceTree = "<group>"; };
+		759BA26F1E6821A7001C32BA /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFiori.framework; sourceTree = "<group>"; };
+		75AC42CE1DAF824D00B445FF /* CollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		77482FF691E021CF229FAE00 /* Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Category.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Category.swift"; sourceTree = "<group>"; };
+		78B4351CBD46204EBC5282B1 /* NorthwindEntitiesMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntitiesMetadata.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/NorthwindEntitiesMetadata.swift"; sourceTree = "<group>"; };
+		7A1315B51D4B982000A5DA56 /* Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employees.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCreationHelper.swift; sourceTree = "<group>"; };
+		7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPFioriLoadingIndicator.swift; sourceTree = "<group>"; };
+		7BD0FCD0E615805B7575C62F /* CustomerAndSuppliersByCityDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerAndSuppliersByCityDetailViewController.swift; path = CustomerAndSuppliersByCity/CustomerAndSuppliersByCityDetailViewController.swift; sourceTree = "<group>"; };
+		8265B4FB10F6A9C64E60BFE2 /* InvoiceMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvoiceMasterViewController.swift; path = Invoice/InvoiceMasterViewController.swift; sourceTree = "<group>"; };
+		83371FFC180AE3253B8978D3 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OrderDetail.storyboard; sourceTree = "<group>"; };
+		8EFB29354557520A13342807 /* CustomerDemographicDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerDemographicDetailViewController.swift; path = CustomerDemographic/CustomerDemographicDetailViewController.swift; sourceTree = "<group>"; };
+		914468BD7C33C9AE0ED31B0B /* TerritoryDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TerritoryDetailViewController.swift; path = Territory/TerritoryDetailViewController.swift; sourceTree = "<group>"; };
+		97E3076D5624AA8AFA5E38D6 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SalesTotalsByAmount.storyboard; sourceTree = "<group>"; };
+		9BBCF10F58C6992A59D6E24A /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Customer.storyboard; sourceTree = "<group>"; };
+		9BF3F691D161C63490D4CDD0 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailViewController.swift; path = Order/OrderDetailViewController.swift; sourceTree = "<group>"; };
+		9E1F5E2BBC61CBD5CD9994E9 /* CurrentProductListDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentProductListDetailViewController.swift; path = CurrentProductList/CurrentProductListDetailViewController.swift; sourceTree = "<group>"; };
+		A49AF0712E833E45CCF3B8B5 /* Supplier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Supplier.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Supplier.swift"; sourceTree = "<group>"; };
+		A828B49D30CAF6BCCEEEE47D /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OrderDetailsExtended.storyboard; sourceTree = "<group>"; };
+		A8BFAD62B7686C11FE0E9E65 /* ShipperDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShipperDetailViewController.swift; path = Shipper/ShipperDetailViewController.swift; sourceTree = "<group>"; };
+		AA9ADA2762384CC3E90DA9E0 /* CustomerMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerMasterViewController.swift; path = Customer/CustomerMasterViewController.swift; sourceTree = "<group>"; };
+		AAC7F010EABFA7524EB12CC5 /* SummaryOfSalesByYearDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYearDetailViewController.swift; path = SummaryOfSalesByYear/SummaryOfSalesByYearDetailViewController.swift; sourceTree = "<group>"; };
+		AD53DF58F2E231B79CE85823 /* SummaryOfSalesByQuarter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByQuarter.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByQuarter.swift"; sourceTree = "<group>"; };
+		AED3786AB17D083CD61AC5CE /* ShipperMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShipperMasterViewController.swift; path = Shipper/ShipperMasterViewController.swift; sourceTree = "<group>"; };
+		AF114A01F1264FE0ADC986F8 /* SupplierMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplierMasterViewController.swift; path = Supplier/SupplierMasterViewController.swift; sourceTree = "<group>"; };
+		B11F0EB183E260C5081FC60E /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SummaryOfSalesByQuarter.storyboard; sourceTree = "<group>"; };
+		B22BB4B8AF32B1EA8A174EA1 /* AlphabeticalListOfProductMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphabeticalListOfProductMasterViewController.swift; path = AlphabeticalListOfProduct/AlphabeticalListOfProductMasterViewController.swift; sourceTree = "<group>"; };
+		B598A3BEE6A1E396B3441F06 /* ProductsAboveAveragePrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsAboveAveragePrice.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/ProductsAboveAveragePrice.swift"; sourceTree = "<group>"; };
+		B86D10DD185E0BEB015C644B /* ProductsAboveAveragePriceMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsAboveAveragePriceMasterViewController.swift; path = ProductsAboveAveragePrice/ProductsAboveAveragePriceMasterViewController.swift; sourceTree = "<group>"; };
+		BA0575702C52631A43385C02 /* ProductSalesFor1997MasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductSalesFor1997MasterViewController.swift; path = ProductSalesFor1997/ProductSalesFor1997MasterViewController.swift; sourceTree = "<group>"; };
+		BBAB109E8D3187F07F891DDB /* Order.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Order.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Order.swift"; sourceTree = "<group>"; };
+		C06FD1219D5B6EE6616205B8 /* OrderDetailsExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailsExtended.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetailsExtended.swift"; sourceTree = "<group>"; };
+		C4B343934CDE5977F6E21902 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Territory.storyboard; sourceTree = "<group>"; };
+		C4CF8D8F50B4C6A04B850A07 /* RegionMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionMasterViewController.swift; path = Region/RegionMasterViewController.swift; sourceTree = "<group>"; };
+		C77264635C50A6873D4DC9E8 /* OrdersQryMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdersQryMasterViewController.swift; path = OrdersQry/OrdersQryMasterViewController.swift; sourceTree = "<group>"; };
+		C92C676BEC5A71C8746E430C /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Supplier.storyboard; sourceTree = "<group>"; };
+		CA03B2F2CF4E0CE3D499608D /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductSalesFor1997.storyboard; sourceTree = "<group>"; };
+		CA14740449B396DF12B24D4C /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SalesByCategory.storyboard; sourceTree = "<group>"; };
+		CAC8F9999BF2A6D72957D327 /* ProductSalesFor1997.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductSalesFor1997.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/ProductSalesFor1997.swift"; sourceTree = "<group>"; };
+		CB5E0DD0EB6BA21733C888F4 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CategoryDetailViewController.swift; path = Category/CategoryDetailViewController.swift; sourceTree = "<group>"; };
+		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB9D753522904094B40B1672 /* SalesTotalsByAmountMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesTotalsByAmountMasterViewController.swift; path = SalesTotalsByAmount/SalesTotalsByAmountMasterViewController.swift; sourceTree = "<group>"; };
+		D0536714947A35B58A509C90 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CustomerAndSuppliersByCity.storyboard; sourceTree = "<group>"; };
+		D0E4B7BA17F956AA54825565 /* Territory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Territory.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Territory.swift"; sourceTree = "<group>"; };
+		D78C09D7B48302E58CD3218C /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductsByCategory.storyboard; sourceTree = "<group>"; };
+		D8A7D2F09CCC5E1808ADBCAD /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Region.swift"; sourceTree = "<group>"; };
+		DF4848878587F46CD88E446F /* CategoryMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CategoryMasterViewController.swift; path = Category/CategoryMasterViewController.swift; sourceTree = "<group>"; };
+		E2A257CC8F2A40DE04414E5C /* Employee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Employee.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Employee.swift"; sourceTree = "<group>"; };
+		E3E2990522A99DC08352E5F3 /* SupplierDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplierDetailViewController.swift; path = Supplier/SupplierDetailViewController.swift; sourceTree = "<group>"; };
+		E6ED93C5CE8D1EDA0E722ABD /* OrderMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderMasterViewController.swift; path = Order/OrderMasterViewController.swift; sourceTree = "<group>"; };
+		E8ABBE80117F5C70575F0D8E /* ProductSalesFor1997DetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductSalesFor1997DetailViewController.swift; path = ProductSalesFor1997/ProductSalesFor1997DetailViewController.swift; sourceTree = "<group>"; };
+		E9FFB849888591D1CBE5942C /* SalesByCategoryMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesByCategoryMasterViewController.swift; path = SalesByCategory/SalesByCategoryMasterViewController.swift; sourceTree = "<group>"; };
+		EA3759D8269A575320F4E2BD /* OrderDetailsExtendedDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetailsExtendedDetailViewController.swift; path = OrderDetailsExtended/OrderDetailsExtendedDetailViewController.swift; sourceTree = "<group>"; };
+		EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYearMasterViewController.swift; path = SummaryOfSalesByYear/SummaryOfSalesByYearMasterViewController.swift; sourceTree = "<group>"; };
+		EE640F3182083CBC9EE72998 /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmployeeDetailViewController.swift; path = Employee/EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		EFEA06E0221EB3DC38AE8A2D /* CurrentProductListMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentProductListMasterViewController.swift; path = CurrentProductList/CurrentProductListMasterViewController.swift; sourceTree = "<group>"; };
+		F01509E4C862F1E77EA255BC /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Order.storyboard; sourceTree = "<group>"; };
+		F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerDemographic.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/CustomerDemographic.swift"; sourceTree = "<group>"; };
+		F7CDA87D5E24DB40DEF26C28 /* CustomerDemographicMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerDemographicMasterViewController.swift; path = CustomerDemographic/CustomerDemographicMasterViewController.swift; sourceTree = "<group>"; };
+		F8AD6DD88F65E6091DC30739 /* Product.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Product.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/Product.swift"; sourceTree = "<group>"; };
+		FA197C7FAD5FC951A36A59AB /* AlphabeticalListOfProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphabeticalListOfProduct.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/AlphabeticalListOfProduct.swift"; sourceTree = "<group>"; };
+		FB661F966ED42CEEAA9F7DB1 /* NorthwindEntities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthwindEntities.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/NorthwindEntities.swift"; sourceTree = "<group>"; };
+		FB9A61B24DBF853EEC01A2FF /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OrdersQry.storyboard; sourceTree = "<group>"; };
+		FC19268841A9B4296AC7B86F /* CurrentProductList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentProductList.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/CurrentProductList.swift"; sourceTree = "<group>"; };
+		FE49A869F51CA3B1DCCE2359 /* CustomerAndSuppliersByCityMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerAndSuppliersByCityMasterViewController.swift; path = CustomerAndSuppliersByCity/CustomerAndSuppliersByCityMasterViewController.swift; sourceTree = "<group>"; };
+		FF45FF866F2FA0022D62488F /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AlphabeticalListOfProduct.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */,
+				12E84FE31F4ECC4A0061C99E /* SAPFioriFlows.framework in Frameworks */,
+				756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */,
+				128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */,
+				759BA2701E6821A7001C32BA /* SAPFiori.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D788956F3DFB9BA8AA6FF4 /* ProductSalesFor1997 */ = {
+			isa = PBXGroup;
+			children = (
+				B587A6264E98BDE9A2F20F48 /* ProductSalesFor1997.storyboard */,
+				BA0575702C52631A43385C02 /* ProductSalesFor1997MasterViewController.swift */,
+				E8ABBE80117F5C70575F0D8E /* ProductSalesFor1997DetailViewController.swift */,
+			);
+			name = ProductSalesFor1997;
+			sourceTree = "<group>";
+		};
+		0B7994115DE90223EF0970D7 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				AD53DF58F2E231B79CE85823 /* SummaryOfSalesByQuarter.swift */,
+				5ADEF7FDCA4AE57585F91E9F /* OrderSubtotal.swift */,
+				D0E4B7BA17F956AA54825565 /* Territory.swift */,
+				B598A3BEE6A1E396B3441F06 /* ProductsAboveAveragePrice.swift */,
+				224BF24550556FBE08AAE882 /* CustomerAndSuppliersByCity.swift */,
+				4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */,
+				78B4351CBD46204EBC5282B1 /* NorthwindEntitiesMetadata.swift */,
+				34F444F51343A2622ABA61BD /* Invoice.swift */,
+				BBAB109E8D3187F07F891DDB /* Order.swift */,
+				513DD4BF3A14ED86AD370798 /* Customer.swift */,
+				FA197C7FAD5FC951A36A59AB /* AlphabeticalListOfProduct.swift */,
+				F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */,
+				C06FD1219D5B6EE6616205B8 /* OrderDetailsExtended.swift */,
+				FC19268841A9B4296AC7B86F /* CurrentProductList.swift */,
+				D8A7D2F09CCC5E1808ADBCAD /* Region.swift */,
+				5683F0C786CB3F8DCB052C0C /* SalesByCategory.swift */,
+				6D9A153036F2ECD8496FA502 /* SalesTotalsByAmount.swift */,
+				77482FF691E021CF229FAE00 /* Category.swift */,
+				F8AD6DD88F65E6091DC30739 /* Product.swift */,
+				E2A257CC8F2A40DE04414E5C /* Employee.swift */,
+				4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */,
+				71A4482E514510265C78ED69 /* OrdersQry.swift */,
+				CAC8F9999BF2A6D72957D327 /* ProductSalesFor1997.swift */,
+				1865F74AFD6B24053C2CFD25 /* ProductsByCategory.swift */,
+				3C0EC36C9A6333CC9183417E /* CategorySalesFor1997.swift */,
+				10EDD7C39AAD30BBDAFC4918 /* Shipper.swift */,
+				A49AF0712E833E45CCF3B8B5 /* Supplier.swift */,
+				FB661F966ED42CEEAA9F7DB1 /* NorthwindEntities.swift */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		1210D91197AA6DF67C4A1878 /* CustomerDemographic */ = {
+			isa = PBXGroup;
+			children = (
+				8CD0457FE88A24D9EF90800D /* CustomerDemographic.storyboard */,
+				F7CDA87D5E24DB40DEF26C28 /* CustomerDemographicMasterViewController.swift */,
+				8EFB29354557520A13342807 /* CustomerDemographicDetailViewController.swift */,
+			);
+			name = CustomerDemographic;
+			sourceTree = "<group>";
+		};
+		12D066CB1F4DDAE40075EBA4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				12E84FDE1F4EBD460061C99E /* OnboardingManager.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		14F05556351AD5A707E119CA /* Shipper */ = {
+			isa = PBXGroup;
+			children = (
+				64C2C1E7780F6FD0DD9ECB0E /* Shipper.storyboard */,
+				AED3786AB17D083CD61AC5CE /* ShipperMasterViewController.swift */,
+				A8BFAD62B7686C11FE0E9E65 /* ShipperDetailViewController.swift */,
+			);
+			name = Shipper;
+			sourceTree = "<group>";
+		};
+		1B75B6164507FE84EE16307D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E98556D718F42B936099B61D /* Category.storyboard */,
+				DF4848878587F46CD88E446F /* CategoryMasterViewController.swift */,
+				CB5E0DD0EB6BA21733C888F4 /* CategoryDetailViewController.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		1F8A8E5DDDB65AC5C55AC74E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				F6CF9DE88148351174EF9AF8 /* Order.storyboard */,
+				E6ED93C5CE8D1EDA0E722ABD /* OrderMasterViewController.swift */,
+				9BF3F691D161C63490D4CDD0 /* OrderDetailViewController.swift */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		2766F7D62DC5A4453A00D8D1 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				41113D3C028017B17E3810D6 /* Customer.storyboard */,
+				AA9ADA2762384CC3E90DA9E0 /* CustomerMasterViewController.swift */,
+				013EED0BA934E12C21C145BA /* CustomerDetailViewController.swift */,
+			);
+			name = Customer;
+			sourceTree = "<group>";
+		};
+		38C83CB46A4B338AF7AF0056 /* SummaryOfSalesByYear */ = {
+			isa = PBXGroup;
+			children = (
+				77AECBD3396E1700D5209332 /* SummaryOfSalesByYear.storyboard */,
+				EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */,
+				AAC7F010EABFA7524EB12CC5 /* SummaryOfSalesByYearDetailViewController.swift */,
+			);
+			name = SummaryOfSalesByYear;
+			sourceTree = "<group>";
+		};
+		48EA65A7AA5FF8831066AEE2 /* ProductsAboveAveragePrice */ = {
+			isa = PBXGroup;
+			children = (
+				B2ABA940B42A061DF79347E0 /* ProductsAboveAveragePrice.storyboard */,
+				B86D10DD185E0BEB015C644B /* ProductsAboveAveragePriceMasterViewController.swift */,
+				5462C576B06D2FD2F391DA30 /* ProductsAboveAveragePriceDetailViewController.swift */,
+			);
+			name = ProductsAboveAveragePrice;
+			sourceTree = "<group>";
+		};
+		545C0CB974A0EF8986DF955F /* CurrentProductList */ = {
+			isa = PBXGroup;
+			children = (
+				00024AEF3438D8BF21410892 /* CurrentProductList.storyboard */,
+				EFEA06E0221EB3DC38AE8A2D /* CurrentProductListMasterViewController.swift */,
+				9E1F5E2BBC61CBD5CD9994E9 /* CurrentProductListDetailViewController.swift */,
+			);
+			name = CurrentProductList;
+			sourceTree = "<group>";
+		};
+		5ACD68B482CF6AD0867F1F04 /* SalesTotalsByAmount */ = {
+			isa = PBXGroup;
+			children = (
+				ECE1521307649482B37BA27E /* SalesTotalsByAmount.storyboard */,
+				CB9D753522904094B40B1672 /* SalesTotalsByAmountMasterViewController.swift */,
+				06BFE7AD0E60AB31DD9FB634 /* SalesTotalsByAmountDetailViewController.swift */,
+			);
+			name = SalesTotalsByAmount;
+			sourceTree = "<group>";
+		};
+		67965418E82252EDF4BA9893 /* Supplier */ = {
+			isa = PBXGroup;
+			children = (
+				08BAF2F5F6FFEE7A3C23FC41 /* Supplier.storyboard */,
+				AF114A01F1264FE0ADC986F8 /* SupplierMasterViewController.swift */,
+				E3E2990522A99DC08352E5F3 /* SupplierDetailViewController.swift */,
+			);
+			name = Supplier;
+			sourceTree = "<group>";
+		};
+		7532C1BB1D5B6917004B03AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12E07EF11E96851800460A94 /* CollectionType.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		755C10B41D5C63B000ECF6A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */,
+				7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		75AC42C81DAF80C000B445FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75AC42CE1DAF824D00B445FF /* CollectionsViewController.swift */,
+				128B53051F8E667000E64DF6 /* SnapshotViewController.swift */,
+				2766F7D62DC5A4453A00D8D1 /* Customer */,
+				F148E037195D02731451A19F /* OrderSubtotal */,
+				545C0CB974A0EF8986DF955F /* CurrentProductList */,
+				C1FF3A2C0D63B03089A0B99C /* SummaryOfSalesByQuarter */,
+				1B75B6164507FE84EE16307D /* Category */,
+				67965418E82252EDF4BA9893 /* Supplier */,
+				E5C1E0E9C788B5DD7FF5A0BD /* Employee */,
+				C5DA91943F89F49B9F2F7FCC /* CategorySalesFor1997 */,
+				48EA65A7AA5FF8831066AEE2 /* ProductsAboveAveragePrice */,
+				C53A06798A1D1D33E0633AB4 /* SalesByCategory */,
+				FFCC95D059A9F4FAD1171F58 /* ProductsByCategory */,
+				B6084A8DA20FA16E727E65DD /* Invoice */,
+				FCD16A2411AFB474EEE1BCC3 /* OrderDetailsExtended */,
+				EF149C3E3ADFB6BA2E5E843E /* OrderDetail */,
+				1F8A8E5DDDB65AC5C55AC74E /* Order */,
+				14F05556351AD5A707E119CA /* Shipper */,
+				5ACD68B482CF6AD0867F1F04 /* SalesTotalsByAmount */,
+				C595EA08E5EACAC29F1A3B4B /* Product */,
+				D1FC1E85CC5BE668F83D0CC5 /* AlphabeticalListOfProduct */,
+				B0FA5F23BCD96393A8FF9420 /* OrdersQry */,
+				1210D91197AA6DF67C4A1878 /* CustomerDemographic */,
+				A0C8922B503249291767E32B /* Region */,
+				D24D8498C7CCE01438DFD2E6 /* Territory */,
+				983E0CB88FFB04C461A169E0 /* CustomerAndSuppliersByCity */,
+				01D788956F3DFB9BA8AA6FF4 /* ProductSalesFor1997 */,
+				38C83CB46A4B338AF7AF0056 /* SummaryOfSalesByYear */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75D373EF1DD1FB0800888D4C /* Proxy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				99AB1995E45D36387FC7A51F /* internal */,
+				0B7994115DE90223EF0970D7 /* public */,
+			);
+			name = "Proxy Classes";
+			sourceTree = "<group>";
+		};
+		7A1315AC1D4B982000A5DA56 = {
+			isa = PBXGroup;
+			children = (
+				7A16F06C1FD1B3C700D2FABD /* README.md */,
+				7A1315B71D4B982000A5DA56 /* Employees */,
+				7A1315B61D4B982000A5DA56 /* Products */,
+				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1315B61D4B982000A5DA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B51D4B982000A5DA56 /* Employees.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1315B71D4B982000A5DA56 /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				12D066CB1F4DDAE40075EBA4 /* Onboarding */,
+				7532C1BB1D5B6917004B03AF /* Model */,
+				75AC42C81DAF80C000B445FF /* ViewControllers */,
+				75D373EF1DD1FB0800888D4C /* Proxy Classes */,
+				755C10B41D5C63B000ECF6A2 /* Utils */,
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
+				7A1315C61D4B982000A5DA56 /* Info.plist */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		7A1315CC1D4B990B00A5DA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */,
+				759BA26F1E6821A7001C32BA /* SAPFiori.framework */,
+				7569DA511E5C716A00C5D751 /* SAPFoundation.framework */,
+				7561921A1DBE1A90007F562C /* SAPOData.framework */,
+				128604D91E55B41600C698B5 /* SAPCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		983E0CB88FFB04C461A169E0 /* CustomerAndSuppliersByCity */ = {
+			isa = PBXGroup;
+			children = (
+				6CD11037160004DA65F0A5F4 /* CustomerAndSuppliersByCity.storyboard */,
+				FE49A869F51CA3B1DCCE2359 /* CustomerAndSuppliersByCityMasterViewController.swift */,
+				7BD0FCD0E615805B7575C62F /* CustomerAndSuppliersByCityDetailViewController.swift */,
+			);
+			name = CustomerAndSuppliersByCity;
+			sourceTree = "<group>";
+		};
+		99AB1995E45D36387FC7A51F /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				58BE8D5DB34AA9DE6B934141 /* NorthwindEntitiesMetadataChanges.swift */,
+				73B60B8301BDF81A75A20864 /* NorthwindEntitiesMetadataParser.swift */,
+				223225A7BB5ABE27022965D7 /* NorthwindEntitiesStaticResolver.swift */,
+				479C4DFC5A4C02CFFFFE8065 /* NorthwindEntitiesFactory.swift */,
+				3A53D4C594746ED20F90D02D /* NorthwindEntitiesMetadataText.swift */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		A0C8922B503249291767E32B /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C10418B359D1B760767F6 /* Region.storyboard */,
+				C4CF8D8F50B4C6A04B850A07 /* RegionMasterViewController.swift */,
+				4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */,
+			);
+			name = Region;
+			sourceTree = "<group>";
+		};
+		B0FA5F23BCD96393A8FF9420 /* OrdersQry */ = {
+			isa = PBXGroup;
+			children = (
+				6A40179744CB66FCFD093AE5 /* OrdersQry.storyboard */,
+				C77264635C50A6873D4DC9E8 /* OrdersQryMasterViewController.swift */,
+				5F177258C15CE8107FB514C0 /* OrdersQryDetailViewController.swift */,
+			);
+			name = OrdersQry;
+			sourceTree = "<group>";
+		};
+		B6084A8DA20FA16E727E65DD /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				E9EC6062B5C95F98C96F376A /* Invoice.storyboard */,
+				8265B4FB10F6A9C64E60BFE2 /* InvoiceMasterViewController.swift */,
+				2E55F8970FB5DF5570558737 /* InvoiceDetailViewController.swift */,
+			);
+			name = Invoice;
+			sourceTree = "<group>";
+		};
+		C1FF3A2C0D63B03089A0B99C /* SummaryOfSalesByQuarter */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B3134DD0DDCBE099BE081 /* SummaryOfSalesByQuarter.storyboard */,
+				47A7E29FEF48707591804960 /* SummaryOfSalesByQuarterMasterViewController.swift */,
+				3B3C491EFA2E1C1100DD6279 /* SummaryOfSalesByQuarterDetailViewController.swift */,
+			);
+			name = SummaryOfSalesByQuarter;
+			sourceTree = "<group>";
+		};
+		C53A06798A1D1D33E0633AB4 /* SalesByCategory */ = {
+			isa = PBXGroup;
+			children = (
+				142085744FA77976401F8D3E /* SalesByCategory.storyboard */,
+				E9FFB849888591D1CBE5942C /* SalesByCategoryMasterViewController.swift */,
+				52C921230A9056A8EA1CED78 /* SalesByCategoryDetailViewController.swift */,
+			);
+			name = SalesByCategory;
+			sourceTree = "<group>";
+		};
+		C595EA08E5EACAC29F1A3B4B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				F02426FC7E5F8969C5C97B75 /* Product.storyboard */,
+				2872AC3D073C3CD324896E75 /* ProductMasterViewController.swift */,
+				6D41339B41E3ECF9CA38FFCE /* ProductDetailViewController.swift */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		C5DA91943F89F49B9F2F7FCC /* CategorySalesFor1997 */ = {
+			isa = PBXGroup;
+			children = (
+				CB62DE84DE9C3799B21B6DBC /* CategorySalesFor1997.storyboard */,
+				4FD3AF458A3CA094618B8A6B /* CategorySalesFor1997MasterViewController.swift */,
+				677070B2581CAA04EDAA0403 /* CategorySalesFor1997DetailViewController.swift */,
+			);
+			name = CategorySalesFor1997;
+			sourceTree = "<group>";
+		};
+		D1FC1E85CC5BE668F83D0CC5 /* AlphabeticalListOfProduct */ = {
+			isa = PBXGroup;
+			children = (
+				8A61296738E47E3E3FD74EF3 /* AlphabeticalListOfProduct.storyboard */,
+				B22BB4B8AF32B1EA8A174EA1 /* AlphabeticalListOfProductMasterViewController.swift */,
+				5A21D36582FECB2C49CDBAE3 /* AlphabeticalListOfProductDetailViewController.swift */,
+			);
+			name = AlphabeticalListOfProduct;
+			sourceTree = "<group>";
+		};
+		D24D8498C7CCE01438DFD2E6 /* Territory */ = {
+			isa = PBXGroup;
+			children = (
+				A3C024EDD1970422A1824DDD /* Territory.storyboard */,
+				64C7513C8137F24905619F74 /* TerritoryMasterViewController.swift */,
+				914468BD7C33C9AE0ED31B0B /* TerritoryDetailViewController.swift */,
+			);
+			name = Territory;
+			sourceTree = "<group>";
+		};
+		E5C1E0E9C788B5DD7FF5A0BD /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				23F576AC3A94B5C721BF6957 /* Employee.storyboard */,
+				7536C59AAF40C94AC78EB921 /* EmployeeMasterViewController.swift */,
+				EE640F3182083CBC9EE72998 /* EmployeeDetailViewController.swift */,
+			);
+			name = Employee;
+			sourceTree = "<group>";
+		};
+		EF149C3E3ADFB6BA2E5E843E /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9C43579064068EFBB1157FF3 /* OrderDetail.storyboard */,
+				69557E3A918865D245E551D1 /* OrderDetailMasterViewController.swift */,
+				0722272DBEB57E9F2A5178AA /* OrderDetailDetailViewController.swift */,
+			);
+			name = OrderDetail;
+			sourceTree = "<group>";
+		};
+		F148E037195D02731451A19F /* OrderSubtotal */ = {
+			isa = PBXGroup;
+			children = (
+				2E4071BEBEA24CD5B5993725 /* OrderSubtotal.storyboard */,
+				6998472784584A758236B952 /* OrderSubtotalMasterViewController.swift */,
+				5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */,
+			);
+			name = OrderSubtotal;
+			sourceTree = "<group>";
+		};
+		FCD16A2411AFB474EEE1BCC3 /* OrderDetailsExtended */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E2BC223BD94E59FFB8E02 /* OrderDetailsExtended.storyboard */,
+				48EC139AF368E4316A746C4C /* OrderDetailsExtendedMasterViewController.swift */,
+				EA3759D8269A575320F4E2BD /* OrderDetailsExtendedDetailViewController.swift */,
+			);
+			name = OrderDetailsExtended;
+			sourceTree = "<group>";
+		};
+		FFCC95D059A9F4FAD1171F58 /* ProductsByCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3797882A7176C2B8CC4F0 /* ProductsByCategory.storyboard */,
+				1D83EF4AAFE22DA5F7BCA44F /* ProductsByCategoryMasterViewController.swift */,
+				2314131EBBC6189D3B5F352D /* ProductsByCategoryDetailViewController.swift */,
+			);
+			name = ProductsByCategory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1315B41D4B982000A5DA56 /* Employees */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "Employees" */;
+			buildPhases = (
+				7A1315B11D4B982000A5DA56 /* Sources */,
+				7A1315B21D4B982000A5DA56 /* Frameworks */,
+				7A1315B31D4B982000A5DA56 /* Resources */,
+				758AC1C31D5A265200311F39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Employees;
+			productName = Employees;
+			productReference = 7A1315B51D4B982000A5DA56 /* Employees.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1315AD1D4B982000A5DA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					7A1315B41D4B982000A5DA56 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 34MXHV49DX;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "Employees" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1315AC1D4B982000A5DA56;
+			productRefGroup = 7A1315B61D4B982000A5DA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1315B41D4B982000A5DA56 /* Employees */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1315B31D4B982000A5DA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
+				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				12D066CF1F4DDB0E0075EBA4 /* (null) in Resources */,
+				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
+				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
+				CCB6B4D82CA9F5C60D3341FE /* Customer.storyboard in Resources */,
+				22EF2C7B7E66930DF959D6A6 /* OrderSubtotal.storyboard in Resources */,
+				98A2E607F006DC449EFC106F /* CurrentProductList.storyboard in Resources */,
+				0B3D2FADB10FCEB958DEF652 /* SummaryOfSalesByQuarter.storyboard in Resources */,
+				761C3F5688B7C4863E2A7784 /* Category.storyboard in Resources */,
+				E2397E4810D61C452705D87F /* Supplier.storyboard in Resources */,
+				D0FA60E392DD042373020689 /* Employee.storyboard in Resources */,
+				514B85CDDA46ADEEF9CABF1D /* CategorySalesFor1997.storyboard in Resources */,
+				1B1C7CBBAFD659C389EED663 /* ProductsAboveAveragePrice.storyboard in Resources */,
+				D059ED80FCE97B4CD25CAA71 /* SalesByCategory.storyboard in Resources */,
+				BDCB67369449D1501E83F5EB /* ProductsByCategory.storyboard in Resources */,
+				5882B186720955B96EFD4057 /* Invoice.storyboard in Resources */,
+				619EE43B9D71E54EBD9E67BE /* OrderDetailsExtended.storyboard in Resources */,
+				F9E0E90DA310D3417A1CCA9C /* OrderDetail.storyboard in Resources */,
+				3BD590677E93AA2BAD880D59 /* Order.storyboard in Resources */,
+				DBE02B0ED8A7CBC081E0C415 /* Shipper.storyboard in Resources */,
+				AFD85D7F50C326F3DEC5C9F3 /* SalesTotalsByAmount.storyboard in Resources */,
+				63E93F634EA5CA2D8C6B106C /* Product.storyboard in Resources */,
+				75A8E8DE26EC25684527A951 /* AlphabeticalListOfProduct.storyboard in Resources */,
+				5B634171D6C7CFA6EF5A9B2F /* OrdersQry.storyboard in Resources */,
+				CCBFD21B37862E5F144A41C3 /* CustomerDemographic.storyboard in Resources */,
+				D56A6D3CDFE76E6317F4CE0C /* Region.storyboard in Resources */,
+				976B5D2A9361A93A25CE5912 /* Territory.storyboard in Resources */,
+				5AAE9584F095859E33926B40 /* CustomerAndSuppliersByCity.storyboard in Resources */,
+				37E7FCDA88E6DC015CFFE29E /* ProductSalesFor1997.storyboard in Resources */,
+				1920BDBFCBC9E8ABCBAF8FCE /* SummaryOfSalesByYear.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1315B11D4B982000A5DA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128B53061F8E667000E64DF6 /* SnapshotViewController.swift in Sources */,
+				12E84FE51F4ECF220061C99E /* OnboardingManager.swift in Sources */,
+				7A9F6FF61F3883D3000A1815 /* SAPFioriLoadingIndicator.swift in Sources */,
+				7A26CA1C1F31BA8800B156B6 /* CellCreationHelper.swift in Sources */,
+				12E07EF21E96851800460A94 /* CollectionType.swift in Sources */,
+				75AC42D41DAF824D00B445FF /* CollectionsViewController.swift in Sources */,
+				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
+				B1E9A2E1A5C26109333FAEF8 /* NorthwindEntitiesMetadataChanges.swift in Sources */,
+				E449202EF127F8B74FB8BFA2 /* NorthwindEntitiesMetadataParser.swift in Sources */,
+				35E987D83F35B456C8F3C5A1 /* NorthwindEntitiesStaticResolver.swift in Sources */,
+				3D93F51BCBCD52CCDA26CAA0 /* NorthwindEntitiesFactory.swift in Sources */,
+				657D50B92AE73D1ED3D9F64D /* NorthwindEntitiesMetadataText.swift in Sources */,
+				C169F42B5174F66A86466A15 /* SummaryOfSalesByQuarter.swift in Sources */,
+				2622A9588D7D8107561A92EC /* OrderSubtotal.swift in Sources */,
+				3456986B977AB51C2EB461F1 /* Territory.swift in Sources */,
+				48BBAD4B8C7A26BA395A7C03 /* ProductsAboveAveragePrice.swift in Sources */,
+				D018E3B3CBF4531CA30FE059 /* CustomerAndSuppliersByCity.swift in Sources */,
+				C4C255DA8119D0542A91462E /* SummaryOfSalesByYear.swift in Sources */,
+				C7B31B20891E78C6A00F6433 /* NorthwindEntitiesMetadata.swift in Sources */,
+				BF686BAA1A45106A29E4446B /* Invoice.swift in Sources */,
+				180D15C9FB8328CF50899FCF /* Order.swift in Sources */,
+				CD7F3F930C66137DA3C56DF6 /* Customer.swift in Sources */,
+				F6649BCD8CC45310019AD3FB /* AlphabeticalListOfProduct.swift in Sources */,
+				4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */,
+				6763F37355F82F07C0680646 /* OrderDetailsExtended.swift in Sources */,
+				B83849612B9D84EA86FF5136 /* CurrentProductList.swift in Sources */,
+				FBD5F15E433BF6D6AA802944 /* Region.swift in Sources */,
+				A46A7B1739D3CB39B190A9E1 /* SalesByCategory.swift in Sources */,
+				5A71DBA7D6AC49210EDB58D0 /* SalesTotalsByAmount.swift in Sources */,
+				73911C956D94297FFB4CE68B /* Category.swift in Sources */,
+				206A69DB1D3E8E30BE5D9B1F /* Product.swift in Sources */,
+				7C7B3D48F15E3CB810FC31B5 /* Employee.swift in Sources */,
+				3B70C8A37F46099589E13BA6 /* OrderDetail.swift in Sources */,
+				D94003F7D1F364E8C2EBE935 /* OrdersQry.swift in Sources */,
+				EA4785617AC8D6BC9EF8FAE5 /* ProductSalesFor1997.swift in Sources */,
+				ABDD35070037375CFFED2999 /* ProductsByCategory.swift in Sources */,
+				29820D58889CB9FECDB6D75A /* CategorySalesFor1997.swift in Sources */,
+				BC1B023243843A484DEDB02B /* Shipper.swift in Sources */,
+				A5735C496635ECDAB12812B3 /* Supplier.swift in Sources */,
+				831B4B15E49F85881101B2CD /* NorthwindEntities.swift in Sources */,
+				5334BF36A9811A5111DD7450 /* CustomerMasterViewController.swift in Sources */,
+				322C75D71964FD5776425507 /* CustomerDetailViewController.swift in Sources */,
+				F946837462F1EEFA048A2EE5 /* OrderSubtotalMasterViewController.swift in Sources */,
+				4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */,
+				DF01C0E7B9701152D088D149 /* CurrentProductListMasterViewController.swift in Sources */,
+				CEA7B0D84669C47C8864C6CB /* CurrentProductListDetailViewController.swift in Sources */,
+				4160296F3314A860954F9A77 /* SummaryOfSalesByQuarterMasterViewController.swift in Sources */,
+				4936169C441E4874BD296554 /* SummaryOfSalesByQuarterDetailViewController.swift in Sources */,
+				27F11668D7C1B16F4F02C762 /* CategoryMasterViewController.swift in Sources */,
+				BA2E9789FA73B4757D3E93A2 /* CategoryDetailViewController.swift in Sources */,
+				C72FC8B6D995CD3951A1C992 /* SupplierMasterViewController.swift in Sources */,
+				509E90EA234DA1688955EF01 /* SupplierDetailViewController.swift in Sources */,
+				28D4A5B8630B7AB34471F597 /* EmployeeMasterViewController.swift in Sources */,
+				83A8CC05BF50AA6FF60FA6FD /* EmployeeDetailViewController.swift in Sources */,
+				56CCCB0647B4DB6E31638EEA /* CategorySalesFor1997MasterViewController.swift in Sources */,
+				96175842F25C9C58842692FB /* CategorySalesFor1997DetailViewController.swift in Sources */,
+				CA3AEB8E10FAE4406CD50BD8 /* ProductsAboveAveragePriceMasterViewController.swift in Sources */,
+				B69F073B073BFA1E44584735 /* ProductsAboveAveragePriceDetailViewController.swift in Sources */,
+				647EC980DE97AF315F67FFDB /* SalesByCategoryMasterViewController.swift in Sources */,
+				852D452E97FD5AEE7416899F /* SalesByCategoryDetailViewController.swift in Sources */,
+				CBA3357B33DF7EBB0928B21A /* ProductsByCategoryMasterViewController.swift in Sources */,
+				14AA77EE4661D8428BF983B1 /* ProductsByCategoryDetailViewController.swift in Sources */,
+				F7111EB3075AC323D5030BB5 /* InvoiceMasterViewController.swift in Sources */,
+				9332CAD8980F7AE8B4387C78 /* InvoiceDetailViewController.swift in Sources */,
+				0A9DDE80B562E2DDE88BF87A /* OrderDetailsExtendedMasterViewController.swift in Sources */,
+				3941A34040E27FA76A7F737D /* OrderDetailsExtendedDetailViewController.swift in Sources */,
+				E78B481DC9E9DC412A6EA9B9 /* OrderDetailMasterViewController.swift in Sources */,
+				404BBAC0B3423647C9265D09 /* OrderDetailDetailViewController.swift in Sources */,
+				45BEB17C98D70C805E4646A9 /* OrderMasterViewController.swift in Sources */,
+				EB8F85A22F72DFEFC282B5AA /* OrderDetailViewController.swift in Sources */,
+				0E2F91C6EC4304878B4DA222 /* ShipperMasterViewController.swift in Sources */,
+				29AFB60DB2B70E09FC11E442 /* ShipperDetailViewController.swift in Sources */,
+				9EFA6FA275A22ED46A4E0F18 /* SalesTotalsByAmountMasterViewController.swift in Sources */,
+				A86585AACAE4928774AEAE42 /* SalesTotalsByAmountDetailViewController.swift in Sources */,
+				BDCEBCBB2E113A26BD768811 /* ProductMasterViewController.swift in Sources */,
+				783DD058DABE5CC33D51E6D7 /* ProductDetailViewController.swift in Sources */,
+				236AD98148F90CAC903C4F46 /* AlphabeticalListOfProductMasterViewController.swift in Sources */,
+				57E8EE521A6D2DE8AC1D51BC /* AlphabeticalListOfProductDetailViewController.swift in Sources */,
+				52DC627D53206FA6BDEBE115 /* OrdersQryMasterViewController.swift in Sources */,
+				42AA6439059BD5B7565B770A /* OrdersQryDetailViewController.swift in Sources */,
+				380F398590182A2CB93604E9 /* CustomerDemographicMasterViewController.swift in Sources */,
+				7C13CD9ADC96F2F29DD1CC1D /* CustomerDemographicDetailViewController.swift in Sources */,
+				D8EABC6E7CC36E8DDADEC542 /* RegionMasterViewController.swift in Sources */,
+				74C569DBED94E31D5659478D /* RegionDetailViewController.swift in Sources */,
+				2D650CB87FA23DDF8385187A /* TerritoryMasterViewController.swift in Sources */,
+				A83BC9C37ABAE63D91E6F1EC /* TerritoryDetailViewController.swift in Sources */,
+				97C4195C25FA7BF04DB5ADC6 /* CustomerAndSuppliersByCityMasterViewController.swift in Sources */,
+				5E4DF5C7BC7A8348C91C0153 /* CustomerAndSuppliersByCityDetailViewController.swift in Sources */,
+				534C84D94F9FF0FB587B7387 /* ProductSalesFor1997MasterViewController.swift in Sources */,
+				71C49EFCEDB31410B08673DC /* ProductSalesFor1997DetailViewController.swift in Sources */,
+				4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */,
+				72C08D7CB89C7E956D118397 /* SummaryOfSalesByYearDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00024AEF3438D8BF21410892 /* CurrentProductList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C8483B3119D4B3F8D7258E /* Base */,
+			);
+			name = CurrentProductList.storyboard;
+			path = CurrentProductList;
+			sourceTree = "<group>";
+		};
+		08BAF2F5F6FFEE7A3C23FC41 /* Supplier.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C92C676BEC5A71C8746E430C /* Base */,
+			);
+			name = Supplier.storyboard;
+			path = Supplier;
+			sourceTree = "<group>";
+		};
+		142085744FA77976401F8D3E /* SalesByCategory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA14740449B396DF12B24D4C /* Base */,
+			);
+			name = SalesByCategory.storyboard;
+			path = SalesByCategory;
+			sourceTree = "<group>";
+		};
+		23F576AC3A94B5C721BF6957 /* Employee.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264D3AC2EBCE8C6E82FB2B07 /* Base */,
+			);
+			name = Employee.storyboard;
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		2E4071BEBEA24CD5B5993725 /* OrderSubtotal.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5E0BAA0E37352DBFB0D03C /* Base */,
+			);
+			name = OrderSubtotal.storyboard;
+			path = OrderSubtotal;
+			sourceTree = "<group>";
+		};
+		41113D3C028017B17E3810D6 /* Customer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BBCF10F58C6992A59D6E24A /* Base */,
+			);
+			name = Customer.storyboard;
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		4E2E2BC223BD94E59FFB8E02 /* OrderDetailsExtended.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A828B49D30CAF6BCCEEEE47D /* Base */,
+			);
+			name = OrderDetailsExtended.storyboard;
+			path = OrderDetailsExtended;
+			sourceTree = "<group>";
+		};
+		64C2C1E7780F6FD0DD9ECB0E /* Shipper.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51544AE06081C3C8B0427E32 /* Base */,
+			);
+			name = Shipper.storyboard;
+			path = Shipper;
+			sourceTree = "<group>";
+		};
+		6A40179744CB66FCFD093AE5 /* OrdersQry.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9A61B24DBF853EEC01A2FF /* Base */,
+			);
+			name = OrdersQry.storyboard;
+			path = OrdersQry;
+			sourceTree = "<group>";
+		};
+		6CD11037160004DA65F0A5F4 /* CustomerAndSuppliersByCity.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0536714947A35B58A509C90 /* Base */,
+			);
+			name = CustomerAndSuppliersByCity.storyboard;
+			path = CustomerAndSuppliersByCity;
+			sourceTree = "<group>";
+		};
+		6D4B3134DD0DDCBE099BE081 /* SummaryOfSalesByQuarter.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B11F0EB183E260C5081FC60E /* Base */,
+			);
+			name = SummaryOfSalesByQuarter.storyboard;
+			path = SummaryOfSalesByQuarter;
+			sourceTree = "<group>";
+		};
+		77AECBD3396E1700D5209332 /* SummaryOfSalesByYear.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2687BC0DD3409DDEC33740E6 /* Base */,
+			);
+			name = SummaryOfSalesByYear.storyboard;
+			path = SummaryOfSalesByYear;
+			sourceTree = "<group>";
+		};
+		7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1315C41D4B982000A5DA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A61296738E47E3E3FD74EF3 /* AlphabeticalListOfProduct.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF45FF866F2FA0022D62488F /* Base */,
+			);
+			name = AlphabeticalListOfProduct.storyboard;
+			path = AlphabeticalListOfProduct;
+			sourceTree = "<group>";
+		};
+		8CD0457FE88A24D9EF90800D /* CustomerDemographic.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2028D5AFC607FAAFF8C8BCF3 /* Base */,
+			);
+			name = CustomerDemographic.storyboard;
+			path = CustomerDemographic;
+			sourceTree = "<group>";
+		};
+		9C43579064068EFBB1157FF3 /* OrderDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83371FFC180AE3253B8978D3 /* Base */,
+			);
+			name = OrderDetail.storyboard;
+			path = OrderDetail;
+			sourceTree = "<group>";
+		};
+		A3C024EDD1970422A1824DDD /* Territory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4B343934CDE5977F6E21902 /* Base */,
+			);
+			name = Territory.storyboard;
+			path = Territory;
+			sourceTree = "<group>";
+		};
+		B2ABA940B42A061DF79347E0 /* ProductsAboveAveragePrice.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DCB3ED580DFEDEB839BE06 /* Base */,
+			);
+			name = ProductsAboveAveragePrice.storyboard;
+			path = ProductsAboveAveragePrice;
+			sourceTree = "<group>";
+		};
+		B587A6264E98BDE9A2F20F48 /* ProductSalesFor1997.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA03B2F2CF4E0CE3D499608D /* Base */,
+			);
+			name = ProductSalesFor1997.storyboard;
+			path = ProductSalesFor1997;
+			sourceTree = "<group>";
+		};
+		CB62DE84DE9C3799B21B6DBC /* CategorySalesFor1997.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				370DBA9235C6BE5D3A7FA662 /* Base */,
+			);
+			name = CategorySalesFor1997.storyboard;
+			path = CategorySalesFor1997;
+			sourceTree = "<group>";
+		};
+		CBC3797882A7176C2B8CC4F0 /* ProductsByCategory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D78C09D7B48302E58CD3218C /* Base */,
+			);
+			name = ProductsByCategory.storyboard;
+			path = ProductsByCategory;
+			sourceTree = "<group>";
+		};
+		CBCA7A9B1E3778A9001AF49E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB909D801E38CA8800218154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E98556D718F42B936099B61D /* Category.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694C33354E077E67E3945E2E /* Base */,
+			);
+			name = Category.storyboard;
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E9EC6062B5C95F98C96F376A /* Invoice.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09577C70A3B1C941A38A2800 /* Base */,
+			);
+			name = Invoice.storyboard;
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		ECE1521307649482B37BA27E /* SalesTotalsByAmount.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97E3076D5624AA8AFA5E38D6 /* Base */,
+			);
+			name = SalesTotalsByAmount.storyboard;
+			path = SalesTotalsByAmount;
+			sourceTree = "<group>";
+		};
+		ED4C10418B359D1B760767F6 /* Region.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDEA7B793316DF62042A0B6 /* Base */,
+			);
+			name = Region.storyboard;
+			path = Region;
+			sourceTree = "<group>";
+		};
+		F02426FC7E5F8969C5C97B75 /* Product.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A04F8F63081C724C9683729 /* Base */,
+			);
+			name = Product.storyboard;
+			path = Product;
+			sourceTree = "<group>";
+		};
+		F6CF9DE88148351174EF9AF8 /* Order.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F01509E4C862F1E77EA255BC /* Base */,
+			);
+			name = Order.storyboard;
+			path = Order;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1315C71D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1315C81D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1315CA1D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 34MXHV49DX;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Employees/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.robertwitt.demo.northwind.Employees;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7A1315CB1D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 34MXHV49DX;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Employees/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.robertwitt.demo.northwind.Employees;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "Employees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315C71D4B982000A5DA56 /* Debug */,
+				7A1315C81D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "Employees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315CA1D4B982000A5DA56 /* Debug */,
+				7A1315CB1D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1315AD1D4B982000A5DA56 /* Project object */;
+}
