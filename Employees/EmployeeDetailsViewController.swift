@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import SAPFiori
+import SAPOData
 
 class EmployeeDetailsViewController: UITableViewController {
     
-    // Properties
+    // MARK: Properties
     
     var employeeID: Int?
+    private var employee: Employee?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshEmployee()
     }
 
     // MARK: Table View Data Source
@@ -39,5 +43,28 @@ class EmployeeDetailsViewController: UITableViewController {
         return cell
     }
     */
-
+    
+    // MARK: Data Access
+    
+    private func refreshEmployee() {
+        guard let employeeID = employeeID else {
+            return
+        }
+        
+        let loadingIndicator = FUIModalLoadingIndicatorView()
+        loadingIndicator.show(inView: view, animated: true)
+        
+        let query = DataQuery()
+            .withKey(Employee.key(employeeID: employeeID))
+            .expand(Employee.employee1, Employee.employees1, Employee.territories)
+        dataService.fetchEmployee(matching: query) { (employee, error) in
+            if let error = error {
+                self.showAlert(withError: error)
+            }
+            self.employee = employee
+            self.tableView.reloadData()
+            loadingIndicator.dismiss()
+        }
+    }
+    
 }
