@@ -7,3 +7,7 @@
 */
 
 "errorAlertTitle" = "Error";
+"alertTitle" = "Alert";
+"alertButtonOK" = "OK";
+"messageServicesUnavailable" = "Messaging services are not available";
+"phoneServicesUnavailable" = "Phone services are not available";
