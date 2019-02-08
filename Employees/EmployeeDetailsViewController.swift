@@ -18,6 +18,17 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     var employeeID: Int?
     private var employee: Employee?
     private let profileHeader = FUIProfileHeader()
+    private let detailsSection = 0
+    private var directsSection: Int {
+        if let employee = employee, employee.isLead {
+            return 1
+        } else {
+            return -1
+        }
+    }
+    private var territoriesSection: Int {
+        return directsSection == -1 ? detailsSection + 1 : directsSection + 1
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +47,25 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     // MARK: Table View Data Source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return territoriesSection + 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case detailsSection:
+            return NSLocalizedString("detailsTitle", comment: "")
+        case directsSection:
+            return NSLocalizedString("directsTitle", comment: "")
+        case territoriesSection:
+            return NSLocalizedString("territoriesTitle", comment: "")
+        default:
+            return nil
+        }
     }
 
     /*

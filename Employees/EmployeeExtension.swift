@@ -18,4 +18,8 @@ extension Employee {
         return fullName.trimmingCharacters(in: CharacterSet.whitespaces)
     }
     
+    var isLead: Bool {
+        return employees1.count > 0
+    }
+    
 }

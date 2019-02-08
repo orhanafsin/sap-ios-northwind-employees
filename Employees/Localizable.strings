@@ -11,3 +11,6 @@
 "alertButtonOK" = "OK";
 "messageServicesUnavailable" = "Messaging services are not available";
 "phoneServicesUnavailable" = "Phone services are not available";
+"detailsTitle" = "Details";
+"directsTitle" = "Directs";
+"territoriesTitle" = "Territories";
