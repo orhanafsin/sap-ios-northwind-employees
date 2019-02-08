@@ -41,15 +41,8 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTableView()
         configureHeader()
         refreshEmployee()
-    }
-    
-    private func configureTableView() {
-        tableView.estimatedRowHeight = 98
-        tableView.rowHeight = UITableView.automaticDimension
-//        tableView.register(FUIKeyValueFormCell.self, forCellReuseIdentifier: FUIKeyValueFormCell.reuseIdentifier)
     }
     
     private func configureHeader() {
@@ -71,8 +64,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case detailsSection:
             return TableViewDetailsRow.count
         case directsSection:
-            // TODO To be implemented
-            return 0
+            return employee?.employees1.count ?? 0
         case territoriesSection:
             // TODO To be implemented
             return 0
@@ -99,7 +91,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case detailsSection:
             return detailsCellForRowAtIndexPath(indexPath)
         case directsSection:
-            return UITableViewCell()
+            return directsCellForRowAtIndexPath(indexPath)
         case territoriesSection:
             return UITableViewCell()
         default:
@@ -120,6 +112,15 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case .lead:
             return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeLead", comment: ""), value: employee?.employee1?.fullName, hasDetail: true)
         }
+    }
+    
+    private func directsCellForRowAtIndexPath(_ indexPath: IndexPath) -> UITableViewCell {
+        let direct = employee?.employees1[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ValueCell", for: indexPath)
+        cell.textLabel?.text = direct?.fullName
+        cell.accessoryType = .disclosureIndicator
+        cell.selectionStyle = .default
+        return cell
     }
     
     private func keyValueCellForRowAtIndexPath(_ indexPath: IndexPath, key: String?, value: String?, hasDetail: Bool = false) -> UITableViewCell {
