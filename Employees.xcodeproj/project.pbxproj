@@ -53,6 +53,8 @@
 		4B7A767A21E53FB50084CD6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A767921E53FB50084CD6D /* Localizable.strings */; };
 		4B7A767C21E546C30084CD6D /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A767B21E546C30084CD6D /* EmployeeDetailsViewController.swift */; };
 		4B7A768021E548ED0084CD6D /* EmployeeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */; };
+		4BD00631220DA1A7005DD5D6 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD00630220DA1A7005DD5D6 /* Formatter.swift */; };
+		4BD00633220DA217005DD5D6 /* LocalDateTimeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD00632220DA217005DD5D6 /* LocalDateTimeExtension.swift */; };
 		4C1431FFB4B5DFC7CE181DA1 /* CustomerDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391A2BB2EFE6A120F848BB6 /* CustomerDemographic.swift */; };
 		4D75AB2BB8D8CD72EE5A7A81 /* OrderSubtotalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B753BEC49458CE133FCE400 /* OrderSubtotalDetailViewController.swift */; };
 		4E6E72B45F1C0E9CC18255F5 /* SummaryOfSalesByYearMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA43B21CE40D16325718192 /* SummaryOfSalesByYearMasterViewController.swift */; };
@@ -207,6 +209,8 @@
 		4B7A767921E53FB50084CD6D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4B7A767B21E546C30084CD6D /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
 		4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeDetails.storyboard; sourceTree = "<group>"; };
+		4BD00630220DA1A7005DD5D6 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		4BD00632220DA217005DD5D6 /* LocalDateTimeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDateTimeExtension.swift; sourceTree = "<group>"; };
 		4C2F2C9CD3B6649CB04FA948 /* OrderDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/OrderDetail.swift"; sourceTree = "<group>"; };
 		4C58DB1CA5CEA3ED93AD0438 /* RegionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegionDetailViewController.swift; path = Region/RegionDetailViewController.swift; sourceTree = "<group>"; };
 		4D83A0F61473AE938D3D1500 /* SummaryOfSalesByYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummaryOfSalesByYear.swift; path = "Proxy Classes/de.robertwitt.demo.northwind/public/SummaryOfSalesByYear.swift"; sourceTree = "<group>"; };
@@ -481,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				12E07EF11E96851800460A94 /* CollectionType.swift */,
+				4BD00632220DA217005DD5D6 /* LocalDateTimeExtension.swift */,
 				4B7A767721E53B480084CD6D /* EmployeeExtension.swift */,
 			);
 			name = Model;
@@ -491,6 +496,7 @@
 			children = (
 				7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */,
 				7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */,
+				4BD00630220DA1A7005DD5D6 /* Formatter.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -871,10 +877,12 @@
 				E449202EF127F8B74FB8BFA2 /* NorthwindEntitiesMetadataParser.swift in Sources */,
 				35E987D83F35B456C8F3C5A1 /* NorthwindEntitiesStaticResolver.swift in Sources */,
 				3D93F51BCBCD52CCDA26CAA0 /* NorthwindEntitiesFactory.swift in Sources */,
+				4BD00631220DA1A7005DD5D6 /* Formatter.swift in Sources */,
 				4B7A767C21E546C30084CD6D /* EmployeeDetailsViewController.swift in Sources */,
 				657D50B92AE73D1ED3D9F64D /* NorthwindEntitiesMetadataText.swift in Sources */,
 				C169F42B5174F66A86466A15 /* SummaryOfSalesByQuarter.swift in Sources */,
 				2622A9588D7D8107561A92EC /* OrderSubtotal.swift in Sources */,
+				4BD00633220DA217005DD5D6 /* LocalDateTimeExtension.swift in Sources */,
 				3456986B977AB51C2EB461F1 /* Territory.swift in Sources */,
 				48BBAD4B8C7A26BA395A7C03 /* ProductsAboveAveragePrice.swift in Sources */,
 				D018E3B3CBF4531CA30FE059 /* CustomerAndSuppliersByCity.swift in Sources */,

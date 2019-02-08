@@ -114,9 +114,9 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case .address:
             return UITableViewCell()
         case .birthDate:
-            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeBirthDate", comment: ""), value: employee?.birthDate?.toString())
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeBirthDate", comment: ""), value: employee?.formattedBirthDate)
         case .hireDate:
-            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeHireDate", comment: ""), value: employee?.hireDate?.toString())
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeHireDate", comment: ""), value: employee?.formattedHireDate)
         case .lead:
             return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeLead", comment: ""), value: employee?.employee1?.fullName, hasDetail: true)
         }

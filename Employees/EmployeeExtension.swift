@@ -18,6 +18,20 @@ extension Employee {
         return fullName.trimmingCharacters(in: CharacterSet.whitespaces)
     }
     
+    var formattedBirthDate: String? {
+        guard let birthDate = birthDate else {
+            return nil
+        }
+        return Formatter().format(date: birthDate.toDate(), dateStyle: .medium, timeStyle: .none)
+    }
+    
+    var formattedHireDate: String? {
+        guard let hireDate = hireDate else {
+            return nil
+        }
+        return Formatter().format(date: hireDate.toDate(), dateStyle: .medium, timeStyle: .none)
+    }
+    
     var isLead: Bool {
         return employees1.count > 0
     }
