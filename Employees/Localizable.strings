@@ -14,3 +14,7 @@
 "detailsTitle" = "Details";
 "directsTitle" = "Directs";
 "territoriesTitle" = "Territories";
+"employeePhone" = "Phone";
+"employeeBirthDate" = "Birth Date";
+"employeeHireDate" = "Hire Date";
+"employeeLead" = "Reports To";

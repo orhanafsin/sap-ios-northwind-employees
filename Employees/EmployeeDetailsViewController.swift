@@ -13,6 +13,15 @@ import SAPOData
 
 class EmployeeDetailsViewController: UITableViewController, MFMessageComposeViewControllerDelegate {
     
+    private enum TableViewDetailsRow: Int {
+        case phone = 0
+        case address = 1
+        case birthDate = 2
+        case hireDate = 3
+        case lead = 4
+        static let count = 5
+    }
+    
     // MARK: Properties
     
     var employeeID: Int?
@@ -32,8 +41,15 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         configureHeader()
         refreshEmployee()
+    }
+    
+    private func configureTableView() {
+        tableView.estimatedRowHeight = 98
+        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.register(FUIKeyValueFormCell.self, forCellReuseIdentifier: FUIKeyValueFormCell.reuseIdentifier)
     }
     
     private func configureHeader() {
@@ -51,8 +67,18 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch section {
+        case detailsSection:
+            return TableViewDetailsRow.count
+        case directsSection:
+            // TODO To be implemented
+            return 0
+        case territoriesSection:
+            // TODO To be implemented
+            return 0
+        default:
+            return 0
+        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -68,15 +94,42 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        switch indexPath.section {
+        case detailsSection:
+            return detailsCellForRowAtIndexPath(indexPath)
+        case directsSection:
+            return UITableViewCell()
+        case territoriesSection:
+            return UITableViewCell()
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    private func detailsCellForRowAtIndexPath(_ indexPath: IndexPath) -> UITableViewCell {
+        switch TableViewDetailsRow(rawValue: indexPath.row)! {
+        case .phone:
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeePhone", comment: ""), value: employee?.homePhone)
+        case .address:
+            return UITableViewCell()
+        case .birthDate:
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeBirthDate", comment: ""), value: employee?.birthDate?.toString())
+        case .hireDate:
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeHireDate", comment: ""), value: employee?.hireDate?.toString())
+        case .lead:
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeLead", comment: ""), value: employee?.employee1?.fullName, hasDetail: true)
+        }
+    }
+    
+    private func keyValueCellForRowAtIndexPath(_ indexPath: IndexPath, key: String?, value: String?, hasDetail: Bool = false) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "KeyValueCell", for: indexPath)
+        cell.textLabel?.text = key
+        cell.detailTextLabel?.text = value
+        cell.accessoryType = hasDetail ? .disclosureIndicator : .none
+        cell.selectionStyle = hasDetail ? .default : .none
         return cell
     }
-    */
     
     // MARK: Actions
     
