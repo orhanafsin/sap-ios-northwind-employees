@@ -48,7 +48,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     private func configureHeader() {
         profileHeader.headlineText = " "
         profileHeader.subheadlineText = " "
-        profileHeader.descriptionText = " "
+        profileHeader.descriptionText = presentedInSplitView ? " " : nil
         profileHeader.detailContentView = FUIActivityControl()
         tableView.addSubview(profileHeader)
     }
@@ -189,7 +189,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     private func refreshHeader() {
         profileHeader.headlineText = employee?.fullName
         profileHeader.subheadlineText = employee?.title
-        profileHeader.descriptionText = employee?.notes
+        profileHeader.descriptionText = presentedInSplitView ? employee?.notes : nil
         if let photo = employee?.photo {
             profileHeader.imageView.image = UIImage(data: photo)
         }
