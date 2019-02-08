@@ -112,7 +112,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case .phone:
             return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeePhone", comment: ""), value: employee?.homePhone)
         case .address:
-            return UITableViewCell()
+            return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeAddress", comment: ""), value: employee?.addressLine)
         case .birthDate:
             return keyValueCellForRowAtIndexPath(indexPath, key: NSLocalizedString("employeeBirthDate", comment: ""), value: employee?.formattedBirthDate)
         case .hireDate:

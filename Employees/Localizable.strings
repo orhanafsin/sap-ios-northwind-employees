@@ -15,6 +15,7 @@
 "directsTitle" = "Directs";
 "territoriesTitle" = "Territories";
 "employeePhone" = "Phone";
+"employeeAddress" = "Address";
 "employeeBirthDate" = "Birth Date";
 "employeeHireDate" = "Hire Date";
 "employeeLead" = "Reports To";

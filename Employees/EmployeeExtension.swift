@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Contacts
 
 extension Employee {
     
@@ -16,6 +17,23 @@ extension Employee {
         let titleOfCourtesy = self.titleOfCourtesy ?? ""
         let fullName = String(format: "%@ %@ %@", titleOfCourtesy, firstName, lastName)
         return fullName.trimmingCharacters(in: CharacterSet.whitespaces)
+    }
+    
+    var postalAddress: CNPostalAddress? {
+        let postalAddress = CNMutablePostalAddress()
+        postalAddress.street = address ?? ""
+        postalAddress.city = city ?? ""
+        postalAddress.state = region ?? ""
+        postalAddress.postalCode = postalCode ?? ""
+        postalAddress.country = country ?? ""
+        return postalAddress
+    }
+    
+    var addressLine: String? {
+        guard let postalAddress = postalAddress else {
+            return nil
+        }
+        return CNPostalAddressFormatter().string(from: postalAddress)
     }
     
     var formattedBirthDate: String? {
