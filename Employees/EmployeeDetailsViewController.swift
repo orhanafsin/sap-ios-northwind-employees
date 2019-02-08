@@ -71,7 +71,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
             return employee?.employees1.count ?? 0
         case territoriesSection:
             // TODO To be implemented
-            return 0
+            return employee?.territories.count ?? 0
         default:
             return 0
         }
@@ -97,7 +97,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case directsSection:
             return directsCellForRowAtIndexPath(indexPath)
         case territoriesSection:
-            return UITableViewCell()
+            return territoryCellForRowAtIndexPath(indexPath)
         default:
             return UITableViewCell()
         }
@@ -125,6 +125,11 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .default
         return cell
+    }
+    
+    private func territoryCellForRowAtIndexPath(_ indexPath: IndexPath) -> UITableViewCell {
+        let territory = employee?.territories[indexPath.row]
+        return keyValueCellForRowAtIndexPath(indexPath, key: territory?.territoryDescription, value: territory?.region?.regionDescription)
     }
     
     private func keyValueCellForRowAtIndexPath(_ indexPath: IndexPath, key: String?, value: String?, hasDetail: Bool = false) -> UITableViewCell {
