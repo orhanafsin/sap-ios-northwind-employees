@@ -62,7 +62,11 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case detailsSection:
-            return TableViewDetailsRow.count
+            if let employee = employee, employee.hasLead {
+                return TableViewDetailsRow.count
+            } else {
+                return TableViewDetailsRow.count - 1
+            }
         case directsSection:
             return employee?.employees1.count ?? 0
         case territoriesSection:

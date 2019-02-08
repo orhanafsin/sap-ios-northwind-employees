@@ -54,4 +54,8 @@ extension Employee {
         return employees1.count > 0
     }
     
+    var hasLead: Bool {
+        return employee1 != nil
+    }
+    
 }
