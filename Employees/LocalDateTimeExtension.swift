@@ -11,6 +11,14 @@ import SAPOData
 
 extension LocalDateTime {
     
+    var dateComponents: DateComponents {
+        var dateComponents = DateComponents()
+        dateComponents.day = day
+        dateComponents.month = month
+        dateComponents.year = year
+        return dateComponents
+    }
+    
     func toDate() -> Date {
         let components = NSDateComponents()
         components.year = year

@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import ContactsUI
 import SAPFiori
 import SAPOData
 
@@ -23,9 +24,8 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     }
     
     private enum TableViewActionsRow: Int {
-        case newContact = 0
-        case addToContact = 1
-        static let count = 2
+        case shareContact = 0
+        static let count = 1
     }
     
     // MARK: Properties
@@ -161,10 +161,9 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIButtonFormCell.reuseIdentifier, for: indexPath) as! FUIButtonFormCell
         cell.alignment = .left
         switch TableViewActionsRow(rawValue: indexPath.row)! {
-        case .newContact:
-            cell.button.titleLabel?.text = NSLocalizedString("newContactButtonTitle", comment: "")
-        case.addToContact:
-            cell.button.titleLabel?.text = NSLocalizedString("addToContactButtonTitle", comment: "")
+        case .shareContact:
+            cell.button.titleLabel?.text = NSLocalizedString("shareContactButtonTitle", comment: "")
+            cell.button.addTarget(self, action: #selector(shareContactTapped(_:)), for: .touchUpInside)
         }
         return cell
     }
@@ -208,6 +207,20 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
             return
         }
         UIApplication.shared.open(url)
+    }
+    
+    @objc func shareContactTapped(_ sender: UIButton) {
+        let contactStore = CNContactStore()
+        contactStore.requestAccess(for: .contacts) { (granted, error) in
+            if let error = error {
+                self.showAlert(withError: error)
+            }
+            if granted, let contact = self.employee?.contact {
+                let contactViewController = CNContactViewController(forUnknownContact: contact)
+                contactViewController.contactStore = contactStore
+                self.navigationController?.pushViewController(contactViewController, animated: true)
+            }
+        }
     }
     
     // MARK: Data Access

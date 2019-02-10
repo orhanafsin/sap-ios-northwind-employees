@@ -58,4 +58,22 @@ extension Employee {
         return employee1 != nil
     }
     
+    var contact: CNContact {
+        let contact = CNMutableContact()
+        contact.contactType = .person
+        contact.familyName = lastName ?? ""
+        contact.givenName = firstName ?? ""
+        contact.jobTitle = title ?? ""
+        contact.imageData = photo
+        contact.note = notes ?? ""
+        contact.birthday = birthDate?.dateComponents
+        if let phone = homePhone {
+            contact.phoneNumbers = [CNLabeledValue(label: CNLabelWork, value: CNPhoneNumber(stringValue: phone))]
+        }
+        if let postalAddress = postalAddress {
+            contact.postalAddresses = [CNLabeledValue(label: CNLabelWork, value: postalAddress)]
+        }
+        return contact
+    }
+    
 }

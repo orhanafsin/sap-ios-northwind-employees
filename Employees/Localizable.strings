@@ -19,5 +19,4 @@
 "employeeBirthDate" = "Birth Date";
 "employeeHireDate" = "Hire Date";
 "employeeLead" = "Reports To";
-"newContactButtonTitle" = "New Contact";
-"addToContactButtonTitle" = "Add to Contact";
+"shareContactButtonTitle" = "Share Contact";
