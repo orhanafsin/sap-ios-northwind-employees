@@ -451,6 +451,16 @@
 			name = ProductsAboveAveragePrice;
 			sourceTree = "<group>";
 		};
+		4BD006342210574F005DD5D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		545C0CB974A0EF8986DF955F /* CurrentProductList */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +542,7 @@
 				983E0CB88FFB04C461A169E0 /* CustomerAndSuppliersByCity */,
 				01D788956F3DFB9BA8AA6FF4 /* ProductSalesFor1997 */,
 				38C83CB46A4B338AF7AF0056 /* SummaryOfSalesByYear */,
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
 				4B7A767321E535EE0084CD6D /* ViewControllerExtension.swift */,
 				4B7A767521E537280084CD6D /* EmployeeDirectoryViewController.swift */,
 				4B7A767B21E546C30084CD6D /* EmployeeDetailsViewController.swift */,
@@ -571,17 +582,14 @@
 			children = (
 				12D066CB1F4DDAE40075EBA4 /* Onboarding */,
 				7532C1BB1D5B6917004B03AF /* Model */,
-				75AC42C81DAF80C000B445FF /* ViewControllers */,
 				75D373EF1DD1FB0800888D4C /* Proxy Classes */,
+				4BD006342210574F005DD5D6 /* Views */,
+				75AC42C81DAF80C000B445FF /* ViewControllers */,
 				755C10B41D5C63B000ECF6A2 /* Utils */,
-				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
-				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
-				4B7A767F21E548ED0084CD6D /* EmployeeDetails.storyboard */,
 				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
-				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
-				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
 				7A1315C61D4B982000A5DA56 /* Info.plist */,
 				4B7A767921E53FB50084CD6D /* Localizable.strings */,
+				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
 			);
 			path = Employees;
 			sourceTree = "<group>";
