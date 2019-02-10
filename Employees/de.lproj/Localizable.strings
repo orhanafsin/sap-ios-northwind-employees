@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Employees
+
+  Created by Robert Witt on 08.01.19.
+  Copyright © 2019 SAP. All rights reserved.
+*/
+
+"errorAlertTitle" = "Fehler";
+"alertTitle" = "Alarm";
+"alertButtonOK" = "OK";
+"messageServicesUnavailable" = "Nachrichtenservices sind nicht verfügbar";
+"messageSent" = "Nachricht wurde gesendet";
+"phoneServicesUnavailable" = "Telefonservices sind nicht verfügbar";
+"detailsTitle" = "Details";
+"directsTitle" = "Directs";
+"territoriesTitle" = "Gebiete";
+"employeePhone" = "Telefon";
+"employeeAddress" = "Adresse";
+"employeeBirthDate" = "Geburtsdatum";
+"employeeHireDate" = "Einstellungsdatum";
+"employeeLead" = "Berichtet an";
+"shareContactButtonTitle" = "Kontakt teilen";

@@ -10,6 +10,7 @@
 "alertTitle" = "Alert";
 "alertButtonOK" = "OK";
 "messageServicesUnavailable" = "Messaging services are not available";
+"messageSent" = "Message was sent";
 "phoneServicesUnavailable" = "Phone services are not available";
 "detailsTitle" = "Details";
 "directsTitle" = "Directs";
