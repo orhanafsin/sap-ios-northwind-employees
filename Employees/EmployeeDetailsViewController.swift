@@ -22,6 +22,12 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         static let count = 5
     }
     
+    private enum TableViewActionsRow: Int {
+        case newContact = 0
+        case addToContact = 1
+        static let count = 2
+    }
+    
     // MARK: Properties
     
     var employeeID: Int?
@@ -38,11 +44,20 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     private var territoriesSection: Int {
         return directsSection == -1 ? detailsSection + 1 : directsSection + 1
     }
+    private var actionsSection: Int {
+        return territoriesSection + 1
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         configureHeader()
         refreshEmployee()
+    }
+    
+    private func configureTableView() {
+        tableView.register(FUIButtonFormCell.self, forCellReuseIdentifier: FUIButtonFormCell.reuseIdentifier)
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     private func configureHeader() {
@@ -56,7 +71,7 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     // MARK: Table View Data Source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return territoriesSection + 1
+        return actionsSection + 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,8 +85,9 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         case directsSection:
             return employee?.employees1.count ?? 0
         case territoriesSection:
-            // TODO To be implemented
             return employee?.territories.count ?? 0
+        case actionsSection:
+            return TableViewActionsRow.count
         default:
             return 0
         }
@@ -96,6 +112,8 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
             return directsCellForRowAtIndexPath(indexPath)
         case territoriesSection:
             return territoryCellForRowAtIndexPath(indexPath)
+        case actionsSection:
+            return actionsCellForRowAtIndexPath(indexPath)
         default:
             return UITableViewCell()
         }
@@ -136,6 +154,18 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         cell.detailTextLabel?.text = value
         cell.accessoryType = hasDetail ? .disclosureIndicator : .none
         cell.selectionStyle = hasDetail ? .default : .none
+        return cell
+    }
+    
+    private func actionsCellForRowAtIndexPath(_ indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: FUIButtonFormCell.reuseIdentifier, for: indexPath) as! FUIButtonFormCell
+        cell.alignment = .left
+        switch TableViewActionsRow(rawValue: indexPath.row)! {
+        case .newContact:
+            cell.button.titleLabel?.text = NSLocalizedString("newContactButtonTitle", comment: "")
+        case.addToContact:
+            cell.button.titleLabel?.text = NSLocalizedString("addToContactButtonTitle", comment: "")
+        }
         return cell
     }
     
