@@ -139,6 +139,26 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
         return cell
     }
     
+    // MARK: Table View Delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var nextEmployee: Employee?
+        if indexPath.section == detailsSection && indexPath.row == TableViewDetailsRow.lead.rawValue {
+            nextEmployee = employee?.employee1
+        } else if indexPath.section == directsSection {
+            nextEmployee = employee?.employees1[indexPath.row]
+        }
+        if let nextEmployee = nextEmployee {
+            let backBarButtonItem = UIBarButtonItem()
+            backBarButtonItem.title = employee?.lastName
+            navigationItem.backBarButtonItem = backBarButtonItem
+            let employeeDetailsStoryboard = UIStoryboard(name: "EmployeeDetails", bundle: nil)
+            let employeeDetailsViewController = employeeDetailsStoryboard.instantiateViewController(withIdentifier: "EmployeeDetails") as! EmployeeDetailsViewController
+            employeeDetailsViewController.employeeID = nextEmployee.employeeID
+            navigationController?.pushViewController(employeeDetailsViewController, animated: true)
+        }
+    }
+    
     // MARK: Actions
     
     @objc func messageTapped(_ sender: UIButton) {
