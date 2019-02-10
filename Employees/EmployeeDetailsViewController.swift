@@ -79,8 +79,6 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
-        case detailsSection:
-            return NSLocalizedString("detailsTitle", comment: "")
         case directsSection:
             return NSLocalizedString("directsTitle", comment: "")
         case territoriesSection:
