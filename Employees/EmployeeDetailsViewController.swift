@@ -216,9 +216,11 @@ class EmployeeDetailsViewController: UITableViewController, MFMessageComposeView
                 self.showAlert(withError: error)
             }
             if granted, let contact = self.employee?.contact {
-                let contactViewController = CNContactViewController(forUnknownContact: contact)
-                contactViewController.contactStore = contactStore
-                self.navigationController?.pushViewController(contactViewController, animated: true)
+                DispatchQueue.main.async {
+                    let contactViewController = CNContactViewController(forUnknownContact: contact)
+                    contactViewController.contactStore = contactStore
+                    self.navigationController?.pushViewController(contactViewController, animated: true)
+                }
             }
         }
     }
